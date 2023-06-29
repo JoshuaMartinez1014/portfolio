@@ -1,0 +1,27 @@
+:root {
+  --background-color: #052440;
+  --border-color: #f2e205;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  color: aliceblue;
+}
+
+.header-section {
+  border-bottom: var(--border-color) solid 4px;
+  width: 80%;
+  padding-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-icon {
+  transition: transform 0.3s ease-in-out;
+}
+.header-icon:hover {
+  transform: scale(1.2);
+}
