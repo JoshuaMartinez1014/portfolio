@@ -3,9 +3,7 @@ import "../styles/global.css";
 
 const AboutMe = () => {
   return (
-    <section
-      style={{ display: "flex", justifyContent: "center", marginTop: "30px" }}
-    >
+    <section className="section-container">
       <div style={{ width: "88vw" }}>
         <img
           src="https://cdn.pixabay.com/photo/2016/11/22/23/13/dog-1851107_1280.jpg"
@@ -14,7 +12,7 @@ const AboutMe = () => {
             borderRadius: "5px",
           }}
         />
-        <br />
+
         <h1>Hello, Im Joshua Martinez</h1>
         <p style={{ color: "grey" }}>
           I'm a web developer and graphic designer

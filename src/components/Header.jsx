@@ -6,19 +6,12 @@ import github from "../img/github-sign.png";
 
 const Header = () => {
   return (
-    <div
-      className="header-container"
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        marginTop: "30px",
-      }}
-    >
+    <div className="section-container">
       <div className="header-section">
-        <h2>
+        <h3>
           Joshua Martinez &nbsp;&nbsp;
-          <span style={{ color: "grey" }}> Portfolio</span>
-        </h2>
+          <span style={{ color: "grey" }}>- Portfolio</span>
+        </h3>
         <div className="header-icon-container">
           <a
             href="https://www.linkedin.com/in/

@@ -10,12 +10,19 @@ body {
   background-color: var(--background-color);
   color: aliceblue;
   font-family: "Kanit", sans-serif;
+  font-size: 1.2rem;
+}
+
+.section-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
 }
 
 .header-section {
   border-bottom: var(--border-color) solid 4px;
   width: 88%;
-  padding-bottom: 5px;
+  font-family: "Kanit", serif;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -36,7 +43,6 @@ body {
   cursor: pointer;
   color: white;
   transition: box-shadow 0.2s;
-
   border-radius: 3px;
   border: grey solid 2px;
   font-size: 0.8rem;
