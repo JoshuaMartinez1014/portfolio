@@ -1,6 +1,6 @@
 /* import { Route, Routes, BrowserRouter } from "react-router-dom"; */
 import "./styles/global.css";
-import { Header, AboutMe, Skills } from "./components";
+import { Header, AboutMe, Skills, Projects } from "./components";
 
 function App() {
   return (
@@ -8,6 +8,7 @@ function App() {
       <Header />
       <AboutMe />
       <Skills />
+      <Projects />
     </>
   );
 }

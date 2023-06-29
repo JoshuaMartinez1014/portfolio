@@ -1,12 +1,11 @@
 import React from "react";
 import "../styles/global.css";
-
 import linkedIn from "../img/linkedin.png";
 import github from "../img/github-sign.png";
 
 const Header = () => {
   return (
-    <div className="section-container">
+    <header className="section-container">
       <div className="header-section">
         <h3>
           Joshua Martinez &nbsp;&nbsp;
@@ -41,7 +40,7 @@ joshua-martinez1014
           </a>
         </div>
       </div>
-    </div>
+    </header>
   );
 };
 
