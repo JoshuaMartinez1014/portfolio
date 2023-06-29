@@ -17,9 +17,9 @@ const Header = () => {
       <div className="header-section">
         <h2>
           Joshua Martinez &nbsp;&nbsp;
-          <span style={{ color: "grey" }}>- Portfolio</span>
+          <span style={{ color: "grey" }}> Portfolio</span>
         </h2>
-        <div>
+        <div className="header-icon-container">
           <a
             href="https://www.linkedin.com/in/
 joshua-martinez1014

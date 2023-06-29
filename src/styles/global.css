@@ -1,6 +1,7 @@
 :root {
   --background-color: #052440;
   --border-color: #f2e205;
+  --font-secondary-color: grey;
 }
 
 body {
@@ -8,11 +9,12 @@ body {
   padding: 0;
   background-color: var(--background-color);
   color: aliceblue;
+  font-family: "Kanit", sans-serif;
 }
 
 .header-section {
   border-bottom: var(--border-color) solid 4px;
-  width: 80%;
+  width: 88%;
   padding-bottom: 5px;
   display: flex;
   align-items: center;
@@ -24,4 +26,29 @@ body {
 }
 .header-icon:hover {
   transform: scale(1.2);
+}
+
+.aboutme-btns {
+  width: 120px;
+  height: 40px;
+  background-image: none;
+  background-color: initial;
+  cursor: pointer;
+  color: white;
+  transition: box-shadow 0.2s;
+
+  border-radius: 3px;
+  border: grey solid 2px;
+  font-size: 0.8rem;
+  font-weight: bolder;
+}
+
+.aboutme-btns:hover {
+  box-shadow: var(--border-color) 3px 3px 1px;
+}
+
+@media (max-width: 320px) {
+  .header-icon-container {
+    display: none;
+  }
 }
