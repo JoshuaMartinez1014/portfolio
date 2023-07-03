@@ -1,5 +1,6 @@
 import React from "react";
 import AboutMe from "../components/AboutMe";
+import Education from "../components/Education";
 import profileImg from "../img/MainProfile1.png";
 
 const Homepage = () => {
@@ -38,24 +39,7 @@ const Homepage = () => {
         <img src={profileImg} className="profile-image" alt="Profile" />
         <h1 style={{ margin: "10px 0px 0px 415px" }}>Joshua Martinez</h1>
         <AboutMe />
-        <section
-          style={{
-            marginTop: "30px",
-            width: "85%",
-            display: "flex",
-            justifyContent: "center",
-          }}
-        >
-          {" "}
-          <div>
-            <h1>Education</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
-              voluptates non eaque culpa voluptatum, id quisquam sunt quia quod
-              eum, nulla inventore earum laudantium in.
-            </p>
-          </div>
-        </section>
+        <Education />
       </main>
     </section>
   );
