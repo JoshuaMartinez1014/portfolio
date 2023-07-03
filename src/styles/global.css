@@ -151,3 +151,7 @@ button:hover {
   background-repeat: no-repeat;
   background-size: cover; */
 }
+
+label {
+  margin-bottom: 10px;
+}

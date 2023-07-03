@@ -8,13 +8,13 @@ import design from "../img/design.png";
 
 const Skills = () => {
   return (
+    /*  width: "80%", marginLeft: "135px", */
     <>
-      <section
+      {/* <section
         className="skills-section"
         style={{
-          /*  width: "80%", */
           fontSize: "1rem",
-          /*   marginLeft: "135px", */
+
           marginTop: "85px",
           backgroundColor: "lightgrey",
           padding: "80px",
@@ -55,7 +55,7 @@ const Skills = () => {
             </p>
           </div>
         </div>
-      </section>
+      </section> */}
       {/*  */}
       <div
         className="homepage-container"
@@ -64,6 +64,7 @@ const Skills = () => {
           flexDirection: "row",
           marginTop: "70px",
           justifyContent: "space-around",
+          backgroundColor: "lightgrey",
         }}
       >
         <div
@@ -94,8 +95,8 @@ const Skills = () => {
               Class, and Assignment.
             </p>
             <span style={{ display: "flex" }}>
-              <button className="main-content-button">GitHub</button>
-              <button className="main-content-button">Live Site</button>
+              <button>GitHub</button>
+              <button>Live Site</button>
             </span>
           </div>
         </div>

@@ -1,9 +1,11 @@
 import React from "react";
+import Contact from "../components/Contact";
 import Skills from "../components/Skills";
 import AboutMe from "../components/AboutMe";
 import Education from "../components/Education";
 import Projects from "../components/Projects";
 import profileImg from "../img/MainProfile1.png";
+import badge from "../img/badge.png";
 
 const Homepage = () => {
   return (
@@ -37,8 +39,20 @@ const Homepage = () => {
           </p>
         </div>
       </header>
+
       {/*  */}
       <main>
+        <img
+          src={badge}
+          alt="Badge"
+          style={{
+            position: "absolute",
+            top: "250px",
+            right: "75px",
+            zIndex: 998,
+            height: "300px",
+          }}
+        />
         <img src={profileImg} className="profile-image" alt="Profile" />
         <h1
           style={{
@@ -59,8 +73,9 @@ const Homepage = () => {
         </h3>
         <AboutMe />
         <Education />
-        <Projects />
-        <Skills />
+        {/*    <Projects /> */}
+        {/*   <Skills /> */}
+        <Contact />
       </main>
     </section>
   );
