@@ -1,4 +1,5 @@
 import React from "react";
+import Skills from "../components/Skills";
 import AboutMe from "../components/AboutMe";
 import Education from "../components/Education";
 import Projects from "../components/Projects";
@@ -54,11 +55,12 @@ const Homepage = () => {
             width: "25%",
           }}
         >
-          Looking for Work &#128221;
+          Looking for Work... &#128221;
         </h3>
         <AboutMe />
         <Education />
         <Projects />
+        <Skills />
       </main>
     </section>
   );

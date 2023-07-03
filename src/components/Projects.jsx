@@ -17,7 +17,13 @@ const Projects = () => {
       <h2>Projects</h2> <br />
       <div style={{ display: "flex", justifyContent: "space-between" }}>
         <div>
-          <div className="project-container">
+          <div
+            className="project-container"
+            style={{
+              backgroundColor: "#ffffff",
+              boxShadow: "3px 3px 10px rgba(0, 0, 0, 0.5)",
+            }}
+          >
             <a href="#gradebook">
               <img
                 src={gradeBook}
@@ -40,7 +46,13 @@ const Projects = () => {
           </span>
         </div>
         <div>
-          <div className="project-container">
+          <div
+            className="project-container"
+            style={{
+              backgroundColor: "#ffffff",
+              boxShadow: "3px 3px 10px rgba(0, 0, 0, 0.5)",
+            }}
+          >
             <a href="#techblog">
               <img
                 src={techBlog}
@@ -61,7 +73,13 @@ const Projects = () => {
           </span>
         </div>
         <div>
-          <div className="project-container">
+          <div
+            className="project-container"
+            style={{
+              backgroundColor: "#ffffff",
+              boxShadow: "3px 3px 10px rgba(0, 0, 0, 0.5)",
+            }}
+          >
             <a href="#adobe portfolio">
               <img
                 src={design}
@@ -82,11 +100,6 @@ const Projects = () => {
           </span>
         </div>
       </div>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
     </section>
   );
 };

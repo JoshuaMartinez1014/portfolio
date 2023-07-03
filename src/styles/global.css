@@ -89,7 +89,7 @@ button {
 }
 
 button:after {
-  background-color: #ff0000;
+  background-color: #a8a8a8;
   border-radius: 8px;
   content: "";
   display: block;
@@ -144,4 +144,10 @@ button:hover {
   position: sticky;
   top: 0;
   z-index: 999;
+}
+
+.skills-section {
+  /*   background-image: url("https://cdn.pixabay.com/photo/2016/03/27/07/32/clouds-1282314_1280.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; */
 }
