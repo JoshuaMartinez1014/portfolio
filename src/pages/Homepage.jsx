@@ -37,9 +37,30 @@ const Homepage = () => {
       {/*  */}
       <main>
         <img src={profileImg} className="profile-image" alt="Profile" />
-        <h1 style={{ margin: "10px 0px 0px 415px" }}>Joshua Martinez</h1>
+        <h1
+          style={{
+            margin: "10px 0px 0px 415px",
+            borderBottom: "solid red 4px",
+            width: "25%",
+          }}
+        >
+          Joshua Martinez
+        </h1>
+        <h3
+          style={{
+            margin: "10px 0px 0px 415px",
+            width: "25%",
+          }}
+        >
+          Looking for Work &#128221;
+        </h3>
         <AboutMe />
         <Education />
+        <section
+          style={{ marginTop: "30px", marginLeft: "135px", width: "84%" }}
+        >
+          <h2>Work</h2>
+        </section>
       </main>
     </section>
   );

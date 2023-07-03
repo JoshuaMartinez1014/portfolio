@@ -9,7 +9,7 @@ const Education = () => {
       style={{
         marginTop: "30px",
         marginLeft: "135px",
-        width: "84%",
+        width: "80%",
       }}
     >
       <h2>Education</h2> <br />
@@ -18,7 +18,7 @@ const Education = () => {
           <img
             src={UOM}
             style={{
-              height: "200px",
+              height: "220px",
               width: "400px",
               borderRadius: "15px",
             }}
@@ -33,7 +33,7 @@ const Education = () => {
           <img
             src={Rasmussen}
             style={{
-              height: "200px",
+              height: "220px",
               width: "400px",
               borderRadius: "15px",
             }}
@@ -46,7 +46,7 @@ const Education = () => {
           <img
             src={codeacademy}
             style={{
-              height: "200px",
+              height: "220px",
               width: "400px",
               borderRadius: "15px",
             }}

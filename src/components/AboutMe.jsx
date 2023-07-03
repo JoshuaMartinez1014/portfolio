@@ -13,7 +13,7 @@ const AboutMe = () => {
           marginTop: "130px",
           display: "flex",
           justifyContent: "space-between",
-          width: "85%",
+          width: "80%",
           fontSize: "1rem",
         }}
       >
