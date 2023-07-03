@@ -1,11 +1,11 @@
 import React from "react";
+import AboutMe from "../components/AboutMe";
 import profileImg from "../img/MainProfile1.png";
-import starIcon from "../img/starIcon.png";
 
 const Homepage = () => {
   return (
     <section className="homepage">
-      <section
+      <header
         className="homepage-top-container"
         style={{
           display: "flex",
@@ -19,7 +19,7 @@ const Homepage = () => {
         <div>
           <div className="d-flex justify-content-between" style={{ width: "" }}>
             <p className="homepage-details">Web Developer</p>
-            <p className="homepage-details">Designer</p>
+            <p className="homepage-details">Graphic Designer</p>
             <p className="homepage-details">Problem Solver</p>
           </div>
           <h1>
@@ -29,14 +29,33 @@ const Homepage = () => {
           </h1>
 
           <p className="homepage-details">
-            &#128640; Proficient in Developing with React Framework
+            &#128640; Proficient in Developing with React Framework...
           </p>
         </div>
-      </section>
+      </header>
+      {/*  */}
       <main>
         <img src={profileImg} className="profile-image" alt="Profile" />
         <h1 style={{ margin: "10px 0px 0px 415px" }}>Joshua Martinez</h1>
-        <div style={{ marginLeft: "135px", marginTop: "120px" }}></div>
+        <AboutMe />
+        <section
+          style={{
+            marginTop: "30px",
+            width: "85%",
+            display: "flex",
+            justifyContent: "center",
+          }}
+        >
+          {" "}
+          <div>
+            <h1>Education</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+              voluptates non eaque culpa voluptatum, id quisquam sunt quia quod
+              eum, nulla inventore earum laudantium in.
+            </p>
+          </div>
+        </section>
       </main>
     </section>
   );
