@@ -1,4 +1,5 @@
 import React from "react";
+
 import Contact from "../components/Contact";
 import Skills from "../components/Skills";
 import AboutMe from "../components/AboutMe";
@@ -19,6 +20,7 @@ const Homepage = () => {
           justifyContent: "center",
           lineHeight: "50px",
           borderBottom: "grey solid 8px",
+          boxShadow: "4px 4px 4px rgba(0, 0, 0, .2)",
         }}
       >
         {" "}
@@ -53,7 +55,12 @@ const Homepage = () => {
             height: "300px",
           }}
         />
-        <img src={profileImg} className="profile-image" alt="Profile" />
+        <img
+          src={profileImg}
+          className="profile-image"
+          alt="Profile"
+          style={{ boxShadow: "4px 4px 4px rgba(0, 0, 0, .3)" }}
+        />
         <h1
           style={{
             margin: "10px 0px 0px 415px",
@@ -73,7 +80,7 @@ const Homepage = () => {
         </h3>
         <AboutMe />
         <Education />
-        {/*    <Projects /> */}
+        <Projects />
         {/*   <Skills /> */}
         <Contact />
       </main>

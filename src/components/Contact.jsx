@@ -1,7 +1,38 @@
-import React from "react";
+import React, { useState } from "react";
+import emailjs from "emailjs-com";
 import "../styles/global.css";
 import { Container, Form, Button } from "react-bootstrap";
+
 const Contact = () => {
+  const [showAlert, setShowAlert] = useState(false);
+  const [alertMessage, setAlertMessage] = useState("");
+  const [alertVariant, setAlertVariant] = useState("danger");
+
+  function sendEmail(e) {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_EMAIL_SERVICE_ID,
+        process.env.REACT_APP_EMAIL_TEMPLATE_ID,
+        e.target,
+        process.env.REACT_APP_EMAIL_USER_ID
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+          setAlertMessage(
+            "There was an error sending your message. Please try again."
+          );
+          setAlertVariant("danger");
+          setShowAlert(true);
+        }
+      );
+    e.target.reset();
+  }
+
   return (
     <>
       <div
@@ -9,30 +40,34 @@ const Contact = () => {
         style={{
           display: "flex",
           flexDirection: "row",
-          marginTop: "60px",
+          marginTop: "100px",
           /*  justifyContent: "space-around", */
           backgroundColor: "lightgrey",
-          height: "500px",
+          height: "440px",
           fontWeight: "bold",
+          /*    borderBottom: "solid grey 2px", */
+          boxShadow: "0px -8px 6px rgba(0, 0, 0, .2)",
         }}
       >
         <form
+          onSubmit={sendEmail}
           style={{
             width: "60%",
             backgroundColor: "lightgrey",
             display: "flex",
             justifyContent: "center",
-            paddingTop: "50px",
+            paddingTop: "30px",
             borderRight: "grey solid 4px",
           }}
         >
           <div style={{ width: "60%" }}>
             <span style={{ display: "flex", justifyContent: "space-between" }}>
               <div>
-                <label htmlFor="name">Name</label>
+                <label htmlFor="name">Name:</label>
                 <input
                   type="text"
                   id="name"
+                  name="firstName"
                   placeholder="Enter your name"
                   required
                   style={{
@@ -45,14 +80,16 @@ const Contact = () => {
                     backgroundColor: "#fff",
                     backgroundImage: "none",
                     border: "1px solid #ccc",
+                    boxShadow: "4px 4px 4px rgba(0, 0, 0, .2)",
                   }}
                 />
               </div>
 
               <div>
-                <label htmlFor="email">Email</label>
+                <label htmlFor="email">Email:</label>
                 <input
                   type="email"
+                  name="email"
                   id="email"
                   placeholder="Enter your email"
                   required
@@ -66,15 +103,17 @@ const Contact = () => {
                     backgroundColor: "#fff",
                     backgroundImage: "none",
                     border: "1px solid #ccc",
+                    boxShadow: "4px 4px 4px rgba(0, 0, 0, .2)",
                   }}
                 />
               </div>
             </span>
             <br />
             <div>
-              <label htmlFor="message">Message</label>
+              <label htmlFor="message">Message:</label>
               <textarea
                 id="message"
+                name="message"
                 placeholder="Your message"
                 rows="3"
                 required
@@ -88,12 +127,16 @@ const Contact = () => {
                   backgroundColor: "#fff",
                   backgroundImage: "none",
                   border: "1px solid #ccc",
+                  boxShadow: "4px 4px 4px rgba(0, 0, 0, .2)",
                 }}
               />
             </div>
             <br />
 
-            <button type="submit" style={{}}>
+            <button
+              type="submit"
+              style={{ boxShadow: "4px 4px 4px rgba(0, 0, 0, .2)" }}
+            >
               Submit
             </button>
           </div>
@@ -108,11 +151,12 @@ const Contact = () => {
               display: "flex",
               justifyContent: "space-between",
               alignItems: "center",
+              boxShadow: "0px 4px 4px rgba(0, 0, 0, .2)",
             }}
           >
             <span>
-              <h2>Email:</h2>
-              <h4>Joshaumartinez1014@gmail.com</h4>
+              <h4>Email:</h4>
+              <h5>Joshaumartinez1014@gmail.com</h5>
             </span>
             <span style={{ fontSize: "3rem" }}>&#128231;</span>
           </div>
@@ -124,12 +168,13 @@ const Contact = () => {
               display: "flex",
               justifyContent: "space-between",
               alignItems: "center",
+              boxShadow: "0px 4px 4px rgba(0, 0, 0, .2)",
             }}
           >
             {" "}
             <span>
-              <h2>Phone:</h2>
-              <h4>507-402-5554</h4>
+              <h4>Phone:</h4>
+              <h5>507-402-5554</h5>
             </span>
             <span style={{ fontSize: "3rem" }}>&#128222;</span>
           </div>
@@ -145,8 +190,8 @@ const Contact = () => {
           >
             {" "}
             <span>
-              <h2>Home:</h2>
-              <h4>Hutchinson, Minnesota</h4>
+              <h4>Home:</h4>
+              <h5>Hutchinson, Minnesota</h5>
             </span>{" "}
             <span style={{ fontSize: "3rem" }}>&#127968;</span>
           </div>

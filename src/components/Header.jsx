@@ -6,7 +6,10 @@ import github from "../img/github-sign.png";
 
 const Header = () => {
   return (
-    <header className="sticky-header">
+    <header
+      className="sticky-header"
+      style={{ boxShadow: "4px 4px 4px rgba(0, 0, 0, .2)" }}
+    >
       <Navbar bg="light" expand="lg" className="d-flex justify-content-between">
         <Container fluid>
           <Navbar.Brand href="#home">
