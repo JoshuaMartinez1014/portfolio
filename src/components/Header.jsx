@@ -6,10 +6,12 @@ import github from "../img/github-sign.png";
 
 const Header = () => {
   return (
-    <header>
+    <header className="sticky-header">
       <Navbar bg="light" expand="lg" className="d-flex justify-content-between">
         <Container fluid>
-          <Navbar.Brand href="#home">Joshua Martinez - Portfolio</Navbar.Brand>
+          <Navbar.Brand href="#home">
+            Joshua Martinez <span style={{ color: "grey" }}>- Portfolio</span>
+          </Navbar.Brand>
           <div>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">

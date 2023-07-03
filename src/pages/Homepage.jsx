@@ -1,6 +1,7 @@
 import React from "react";
 import AboutMe from "../components/AboutMe";
 import Education from "../components/Education";
+import Projects from "../components/Projects";
 import profileImg from "../img/MainProfile1.png";
 
 const Homepage = () => {
@@ -14,6 +15,7 @@ const Homepage = () => {
           alignItems: "center",
           justifyContent: "center",
           lineHeight: "50px",
+          borderBottom: "grey solid 8px",
         }}
       >
         {" "}
@@ -41,7 +43,7 @@ const Homepage = () => {
           style={{
             margin: "10px 0px 0px 415px",
             borderBottom: "solid red 4px",
-            width: "25%",
+            width: "500px",
           }}
         >
           Joshua Martinez
@@ -56,11 +58,7 @@ const Homepage = () => {
         </h3>
         <AboutMe />
         <Education />
-        <section
-          style={{ marginTop: "30px", marginLeft: "135px", width: "84%" }}
-        >
-          <h2>Work</h2>
-        </section>
+        <Projects />
       </main>
     </section>
   );

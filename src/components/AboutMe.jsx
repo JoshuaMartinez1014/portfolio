@@ -6,15 +6,19 @@ import "../styles/global.css";
 
 const AboutMe = () => {
   return (
-    <section>
+    <section
+      style={{
+        width: "80%",
+        fontSize: "1rem",
+        marginLeft: "135px",
+        marginTop: "85px",
+      }}
+    >
+      <h2>About Me</h2> <br />
       <div
         style={{
-          marginLeft: "135px",
-          marginTop: "130px",
           display: "flex",
           justifyContent: "space-between",
-          width: "80%",
-          fontSize: "1rem",
         }}
       >
         <article className="aboutme-par">
