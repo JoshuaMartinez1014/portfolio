@@ -10,19 +10,15 @@ const Skills = () => {
   return (
     /*  width: "80%", marginLeft: "135px", */
     <>
-      {/* <section
+      <section
         className="skills-section"
         style={{
-          fontSize: "1rem",
-
-          marginTop: "85px",
-          backgroundColor: "lightgrey",
+          fontSize: "1.2rem",
+          marginTop: "65px",
+          /*  backgroundColor: "lightgrey", */
           padding: "80px",
           display: "flex",
           justifyContent: "center",
-          fontSize: "2rem",
-          borderTop: "grey solid 8px",
-          borderBottom: "grey solid 8px",
         }}
       >
         <div
@@ -32,10 +28,6 @@ const Skills = () => {
             width: "70%",
           }}
         >
-          <img
-            src={skillIcons}
-            style={{ height: "600px", width: "500px" }}
-          ></img>
           <div style={{ width: "500px" }}>
             <h1>Skills</h1>
 
@@ -54,8 +46,12 @@ const Skills = () => {
               maxime optio rerum.
             </p>
           </div>
+          <img
+            src={skillIcons}
+            style={{ height: "500px", width: "400px" }}
+          ></img>
         </div>
-      </section> */}
+      </section>
       {/*  */}
       <div
         className="homepage-container"

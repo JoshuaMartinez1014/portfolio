@@ -160,9 +160,11 @@ button:hover {
 }
 
 .skills-section {
-  /*   background-image: url("https://cdn.pixabay.com/photo/2016/03/27/07/32/clouds-1282314_1280.jpg");
+  /*   background-image: url("https://cdn.pixabay.com/photo/2016/11/23/15/23/cosmos-1853491_1280.jpg");
   background-repeat: no-repeat;
-  background-size: cover; */
+  background-size: cover;
+  background-blend-mode: multiply;
+  box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.3); color: white*/
 }
 
 label {

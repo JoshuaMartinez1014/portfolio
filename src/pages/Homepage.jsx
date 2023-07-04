@@ -81,7 +81,7 @@ const Homepage = () => {
         <AboutMe />
         <Education />
         <Projects />
-        {/*   <Skills /> */}
+        <Skills />
         <Contact />
       </main>
     </section>
