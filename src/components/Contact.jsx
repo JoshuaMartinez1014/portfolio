@@ -36,7 +36,6 @@ const Contact = () => {
   return (
     <>
       <div
-        className="homepage-container"
         style={{
           display: "flex",
           flexDirection: "row",

@@ -80,8 +80,8 @@ const Homepage = () => {
         </h3>
         <AboutMe />
         <Education />
-        <Projects />
         <Skills />
+        <Projects />
         <Contact />
       </main>
     </section>
