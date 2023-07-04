@@ -10,98 +10,13 @@ const Projects = () => {
   return (
     <section
       style={{
-        marginTop: "30px",
+        marginTop: "15px",
         marginLeft: "80px",
         width: "90%",
       }}
     >
-      {/*   <h2>Projects</h2> <br />
-      <div style={{ display: "flex", justifyContent: "space-between" }}>
-        <div>
-          <div
-            className="project-container"
-            style={{
-              backgroundColor: "#ffffff",
-              boxShadow: "3px 3px 10px rgba(0, 0, 0, 0.5)",
-            }}
-          >
-            <a href="#gradebook">
-              <img
-                src={gradeBook}
-                style={{
-                  height: "220px",
-                  width: "400px",
-                  borderRadius: "15px",
-                }}
-              />
-            </a>
-          </div>
-
-          <br />
-
-          <h4>GradeBook</h4>
-          <p>Grade keeping and scoring application</p>
-          <span style={{ display: "flex" }}>
-            <button>Github</button>
-            <button>Deployed</button>
-          </span>
-        </div>
-        <div>
-          <div
-            className="project-container"
-            style={{
-              backgroundColor: "#ffffff",
-              boxShadow: "3px 3px 10px rgba(0, 0, 0, 0.5)",
-            }}
-          >
-            <a href="#techblog">
-              <img
-                src={techBlog}
-                style={{
-                  height: "220px",
-                  width: "400px",
-                  borderRadius: "15px",
-                }}
-              />
-            </a>
-          </div>{" "}
-          <br />
-          <h4>Tech Blog</h4>
-          <p>Social media blog application</p>
-          <span style={{ display: "flex" }}>
-            <button>Github</button>
-            <button>Deployed</button>
-          </span>
-        </div>
-        <div>
-          <div
-            className="project-container"
-            style={{
-              backgroundColor: "#ffffff",
-              boxShadow: "3px 3px 10px rgba(0, 0, 0, 0.5)",
-            }}
-          >
-            <a href="#adobe portfolio">
-              <img
-                src={design}
-                style={{
-                  height: "220px",
-                  width: "400px",
-                  borderRadius: "15px",
-                }}
-              />
-            </a>
-          </div>{" "}
-          <br />
-          <h4>Graphic Design Porfolio</h4>
-          <p>Projects made with adobe software</p>
-          <span style={{ display: "flex" }}>
-            <button>Github</button>
-            <button>Deployed</button>
-          </span>
-        </div>
-      </div> */}
-
+      <h1>Projects</h1>
+      <br />
       <div
         style={{
           height: "500px",

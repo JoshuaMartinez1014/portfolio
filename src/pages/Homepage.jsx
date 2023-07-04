@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import { Container, Form, Button, Modal } from "react-bootstrap";
 
 import Contact from "../components/Contact";
 import Skills from "../components/Skills";

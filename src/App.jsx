@@ -15,7 +15,7 @@ function App() {
         {/*  <Route path="/contact" element={<Contact />} />{" "} */}
         {/* Rendered when you're at '/skills' */}
       </Routes>
-      <Footer />
+      {/*     <Footer /> */}
     </Router>
   );
 }

@@ -13,6 +13,7 @@ const Footer = () => {
         fontSize: "10px",
         paddingTop: "5px",
         color: "white",
+        zIndex: "9999",
       }}
     >
       <p

@@ -261,3 +261,8 @@ label {
   /*   background-position: center 10px; */
   height: 65%;
 }
+
+.modal .modal-dialog {
+  max-width: 800px; /* or 90% for a percentage based width */
+  margin: auto;
+}
