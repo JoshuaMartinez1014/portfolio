@@ -44,8 +44,8 @@ const Contact = () => {
           marginTop: "50px",
           justifyContent: "space-evenly",
           backgroundColor: "lightgrey",
-          borderTop: "darkgrey solid 4px",
-
+          /* borderTop: "darkgrey solid 4px", */
+          boxShadow: "0px -3px 18px rgba(0, 0, 0, 0.4)",
           fontWeight: "bold",
           /*    borderBottom: "solid grey 2px", */
         }}
@@ -56,7 +56,7 @@ const Contact = () => {
             borderRight: "solid grey 2px",
             padding: "10px",
             display: "flex",
-            justifyContent: "space-between",
+            justifyContent: "space-around",
             alignItems: "center",
             flex: "1",
           }}
@@ -73,7 +73,7 @@ const Contact = () => {
             borderRight: "solid grey 2px",
             padding: "10px",
             display: "flex",
-            justifyContent: "space-between",
+            justifyContent: "space-around",
             alignItems: "center",
             flex: "1",
           }}
@@ -91,7 +91,7 @@ const Contact = () => {
             flex: "1",
             padding: "10px",
             display: "flex",
-            justifyContent: "space-between",
+            justifyContent: "space-around",
             alignItems: "center",
           }}
         >

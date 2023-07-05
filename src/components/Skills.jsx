@@ -13,23 +13,20 @@ const Skills = () => {
       <section
         className="skills-section"
         style={{
-          fontSize: "1.2rem",
-          marginTop: "65px",
-          /*  backgroundColor: "lightgrey", */
-          padding: "80px",
-          display: "flex",
-          justifyContent: "center",
+          marginTop: "100px",
+          marginLeft: "135px",
+          width: "80%",
         }}
       >
         <div
           style={{
             display: "flex",
-            justifyContent: "space-around",
-            width: "70%",
+            justifyContent: "space-between",
+            width: "100%",
           }}
         >
           <div style={{ width: "500px" }}>
-            <h1>Skills</h1>
+            <h2>Skills</h2>
 
             <ul>
               <li>CSS</li>
@@ -46,10 +43,7 @@ const Skills = () => {
               maxime optio rerum.
             </p>
           </div>
-          <img
-            src={skillIcons}
-            style={{ height: "500px", width: "400px" }}
-          ></img>
+          <div className="skills-img"></div>
         </div>
       </section>
       {/*  */}

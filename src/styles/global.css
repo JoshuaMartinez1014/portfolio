@@ -44,12 +44,15 @@ a {
   height: 350px;
   width: 100vw;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("https://cdn.pixabay.com/photo/2015/08/28/11/27/space-911785_1280.jpg");
+    url("https://cdn.pixabay.com/photo/2022/06/01/17/40/landscape-7236275_1280.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: multiply;
   color: white;
+  background-attachment: fixed;
+  background-position: 0px 0px;
 }
+/* url("https://cdn.pixabay.com/photo/2015/08/28/11/27/space-911785_1280.jpg"); */
 
 .homepage-details {
   margin-right: 50px;
@@ -57,7 +60,7 @@ a {
 }
 /* #ff00d4 */
 .homepage-title {
-  background: linear-gradient(20deg, #00ccff, #ffee00);
+  background: linear-gradient(20deg, #ff0000, #ffee00);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -265,4 +268,29 @@ label {
 .modal .modal-dialog {
   max-width: 800px; /* or 90% for a percentage based width */
   margin: auto;
+}
+
+.skills-img {
+  background-image: url("https://cdn.pixabay.com/photo/2022/09/30/10/05/river-7489170_1280.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  background-position: 600px 50px;
+  height: 400px;
+  width: 700px;
+  border-radius: 20px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
+  border: solid lightgrey 4px;
+}
+
+.project-h2 {
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  border-bottom: solid 4px white;
+}
+
+.project-h2-black {
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  border-bottom: solid 4px black;
 }

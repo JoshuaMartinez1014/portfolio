@@ -10,18 +10,19 @@ const Projects = () => {
   return (
     <section
       style={{
-        marginTop: "15px",
-        marginLeft: "80px",
-        width: "90%",
+        marginTop: "100px",
+        marginLeft: "135px",
+        marginBottom: "100px",
+        width: "81%",
       }}
     >
-      <h1>Projects</h1>
+      <h2>Projects</h2>
       <br />
       <div
         style={{
           height: "500px",
           display: "flex",
-          justifyContent: "space-around",
+          justifyContent: "space-between",
         }}
       >
         <div
@@ -32,8 +33,8 @@ const Projects = () => {
             borderRadius: "15px",
           }}
         >
-          <div style={{ padding: "40px", color: "white", height: "30%" }}>
-            <h1>Adobe Portfolio</h1>
+          <div style={{ padding: "30px", color: "white", height: "30%" }}>
+            <h2 className="project-h2">Adobe Portfolio</h2>
             <span
               style={{
                 display: "flex",
@@ -57,8 +58,8 @@ const Projects = () => {
             borderRadius: "15px",
           }}
         >
-          <div style={{ padding: "40px", color: "black", height: "31%" }}>
-            <h1>Gradebook</h1>
+          <div style={{ padding: "30px", color: "black", height: "31%" }}>
+            <h2 className="project-h2-black">Gradebook</h2>
             <span
               style={{
                 display: "flex",
@@ -82,11 +83,12 @@ const Projects = () => {
       </div>
       {/*  */}
       <br />
+      <br />
       <div
         style={{
           height: "500px",
           display: "flex",
-          justifyContent: "space-around",
+          justifyContent: "space-between",
         }}
       >
         {" "}
@@ -98,17 +100,21 @@ const Projects = () => {
             borderRadius: "15px",
           }}
         >
-          <div style={{ padding: "40px", color: "black", height: "30%" }}>
-            <h1>TechBlog</h1>
+          <div
+            style={{
+              padding: "30px",
+              color: "black",
+              height: "30%",
+            }}
+          >
+            <h2 className="project-h2-black">TechBlog</h2>
             <span
               style={{
                 display: "flex",
                 justifyContent: "space-between",
               }}
             >
-              <p>
-                Social Blog Site for Technology Information - made w/ Handlebars
-              </p>{" "}
+              <p>Social Blog Site for Technology Information</p>{" "}
               <span>
                 <a href="#">
                   <button className="button-55">Live Site</button>
@@ -130,8 +136,8 @@ const Projects = () => {
             borderRadius: "15px",
           }}
         >
-          <div style={{ padding: "40px", color: "white", height: "30%" }}>
-            <h1>Movie Quiz</h1>
+          <div style={{ padding: "30px", color: "white", height: "30%" }}>
+            <h2 className="project-h2">Movie Quiz</h2>
             <span
               style={{
                 display: "flex",
