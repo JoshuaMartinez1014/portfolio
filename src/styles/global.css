@@ -52,7 +52,6 @@ a {
   background-attachment: fixed;
   background-position: 0px 0px;
 }
-/* url("https://cdn.pixabay.com/photo/2015/08/28/11/27/space-911785_1280.jpg"); */
 
 .homepage-details {
   margin-right: 50px;
@@ -273,14 +272,14 @@ label {
 .skills-img {
   background-image: url("https://cdn.pixabay.com/photo/2022/09/30/10/05/river-7489170_1280.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
-  background-attachment: fixed;
-  background-position: 600px 50px;
+  background-size: cover;
+  /*  background-attachment: fixed;
+  background-position: 600px 50px; */
   height: 400px;
   width: 700px;
   border-radius: 20px;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
-  border: solid lightgrey 4px;
+  border: solid white 4px;
 }
 
 .project-h2 {
@@ -294,3 +293,7 @@ label {
   margin-bottom: 15px;
   border-bottom: solid 4px black;
 }
+
+/* Sources:  https://pixabay.com/photos/landscape-river-mountains-7236275/
+https://pixabay.com/photos/river-trees-mountains-the-needle-7489170/
+*/

@@ -54,7 +54,7 @@ const Projects = () => {
           className="card"
           style={{
             width: "55%",
-            backgroundColor: "lightgrey",
+            backgroundColor: "white",
             borderRadius: "15px",
           }}
         >
@@ -96,7 +96,7 @@ const Projects = () => {
           className="card"
           style={{
             width: "55%",
-            backgroundColor: "lightgrey",
+            backgroundColor: "white",
             borderRadius: "15px",
           }}
         >
