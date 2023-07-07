@@ -18,7 +18,7 @@ const Skills = () => {
           width: "80%",
         }}
       >
-        <div
+        <article
           style={{
             display: "flex",
             justifyContent: "space-between",
@@ -35,6 +35,7 @@ const Skills = () => {
               <li>MongoDb</li>
               <li>MySql</li>
               <li>Adobe Suite</li>
+              <li>Communication</li>
             </ul>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ea
@@ -43,8 +44,11 @@ const Skills = () => {
               maxime optio rerum.
             </p>
           </div>
-          <div className="skills-img"></div>
-        </div>
+          <div
+            className="skills-img"
+            aria-label="Description of the background image"
+          ></div>
+        </article>
       </section>
       {/*  */}
     </>

@@ -6,53 +6,64 @@ import "../styles/global.css";
 
 const AboutMe = () => {
   return (
-    <section
-      style={{
-        width: "80%",
-        fontSize: "1rem",
-        marginLeft: "135px",
-        marginTop: "85px",
-      }}
-    >
+    <section className="aboutme-section">
       <h2>About Me</h2> <br />
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-        }}
-      >
+      <div className="aboutme-container">
         <article className="aboutme-par">
-          <img className="icon-img" src={starIcon} /> <br />
+          <img
+            className="icon-img"
+            src={starIcon}
+            alt="icon of purple box with white star shape in the middle"
+          />{" "}
+          <br />
           <br />
           <p>
-            Proficient in React, adept at component-based architecture, state
-            management, and creating dynamic web applications. Skilled in
-            leveraging React libraries, such as Redux, to simplify state
-            management, optimize performance, and enhance application
-            functionality.
+            As a <strong>React developer</strong>, I have honed my skills in
+            component-based architecture and state management. I am capable of
+            developing <strong>dynamic web applications</strong> and take pride
+            in my growing understanding of this powerful library. My experience
+            extends to <strong>data management</strong> as well, having worked
+            with both SQL and NoSQL databases. I am excited to continue my
+            journey, learning and adapting, while delivering high-quality,
+            efficient solutions along the way.
           </p>
         </article>
         <article className="aboutme-par">
-          <img className="icon-img" src={heartIcon} />
+          <img
+            className="icon-img"
+            src={heartIcon}
+            alt="icon of green box with white heart in the middle"
+          />
           <br />
           <br />
           <p>
-            Proficient in React, adept at component-based architecture, state
-            management, and creating dynamic web applications. Skilled in
-            leveraging React libraries, such as Redux, to simplify state
-            management, optimize performance, and enhance application
-            functionality.
+            Colleagues know me as a{" "}
+            <strong>friendly and compassionate team player</strong> who strives
+            to create an inclusive environment for all. I am passionately
+            curious, driven to comprehend intricate topics, and enjoy turning
+            challenges into opportunities for growth.{" "}
+            <strong>Positivity</strong> is my fuel, and I believe it is
+            instrumental in building effective and happy teams. Let's connect
+            and create meaningful tech solutions together.
           </p>
         </article>
         <article className="aboutme-par">
-          <img className="icon-img" src={lightningIcon} /> <br />
+          <img
+            className="icon-img"
+            src={lightningIcon}
+            alt="icon of blue box with white lightning bolt in the middle"
+          />{" "}
+          <br />
           <br />
           <p>
-            Proficient in React, adept at component-based architecture, state
-            management, and creating dynamic web applications. Skilled in
-            leveraging React libraries, such as Redux, to simplify state
-            management, optimize performance, and enhance application
-            functionality.
+            As a <strong>diligent and detail-oriented professional</strong>, I
+            am committed to meeting deadlines and exceeding expectations. I
+            strive to <strong>understand the nuances</strong> of every
+            assignment and client, ensuring the deliverables align with their
+            precise needs. Furthermore, I place great emphasis on{" "}
+            <strong>open communication</strong>, believing it to be a
+            cornerstone for efficient collaboration and streamlined project
+            execution.
           </p>
         </article>
       </div>

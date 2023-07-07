@@ -18,27 +18,64 @@ h1 {
   font-size: 3.2rem;
 }
 
-h2 {
-  font-weight: bold;
-}
-
-h3 {
-  font-weight: bold;
-}
-
+h2,
+h3,
 h4 {
   font-weight: bold;
 }
 
 h5 {
-  padding-bottom: 4px;
-  border-bottom: dotted 2px black;
+  font-weight: bold;
+  margin-right: 30px;
 }
 
 a {
   text-decoration: none;
   color: white;
 }
+
+form {
+  background-color: lightgrey;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+/* HEADER */
+
+.sticky-header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.form-input {
+  width: 100%;
+  height: 45px;
+  padding: 6px 12px;
+  font-size: 1rem;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+.form-input-message {
+  width: 100%;
+  height: 200px;
+  padding: 6px 12px;
+  font-size: 1rem;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* HOMEPAGE */
 
 .homepage-top-container {
   height: 350px;
@@ -51,42 +88,99 @@ a {
   color: white;
   background-attachment: fixed;
   background-position: 0px 0px;
+  border-bottom: grey solid 8px;
+  box-shadow: 4px 4px 4px rgba(0 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 50px;
 }
 
-.homepage-details {
+.homepage-top-p {
   margin-right: 50px;
   color: rgb(218, 218, 218);
 }
-/* #ff00d4 */
-.homepage-title {
+
+.homepage-top-tagline {
+  color: white;
   background: linear-gradient(20deg, #ff0000, #ffee00);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.profile-image {
-  position: absolute;
-  left: 250px; /* 15% */
-  transform: translate(-50%, -50%) rotateX(5deg) rotateY(5deg);
-  height: 275px;
-  border-radius: 15px;
-  border: solid white 6px;
-  transition: transform 0.5s;
-  transform-style: preserve-3d;
-  perspective: 1000px;
+.homepage-title-name {
+  margin: 10px 0px 0px 415px;
+  border-bottom: solid red 4px;
+  width: 500px;
 }
 
-.profile-image:hover {
-  transform: translate(-50%, -50%) rotateX(0deg) rotateY(0deg);
+.homepage-title-resume {
+  margin: 10px 0px 0px 415px;
+  width: 25%;
+  color: #00028b;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.homepage-title-resume:hover {
+  color: black;
+  transform: scale(1.005);
+}
+
+/* ABOUTME */
+
+.aboutme-section {
+  width: 80%;
+  font-size: 1rem;
+  margin-left: 135px;
+  margin-top: 85px;
+}
+
+.aboutme-container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .aboutme-par {
   width: 400px;
 }
 
-.icon-img {
-  height: 90px;
+/* EDUCATION */
+
+.education-section {
+  margin-top: 30px;
+  margin-left: 135px;
+  width: 80%;
 }
+
+.education-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.education-img-container {
+  width: 400px;
+  height: 220px;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.education-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease-in-out;
+  object-fit: cover;
+}
+
+.education-img:hover {
+  transform: scale(1.05);
+}
+
+/* SKILLS */
+
+/* PROJECTS */
 
 .project-container {
   overflow: hidden;
@@ -104,20 +198,6 @@ a {
 
 .project-container img:hover {
   transform: scale(1.05);
-}
-
-.sticky-header {
-  position: sticky;
-  top: 0;
-  z-index: 999;
-}
-
-.skills-section {
-  /*   background-image: url("https://cdn.pixabay.com/photo/2016/11/23/15/23/cosmos-1853491_1280.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-blend-mode: multiply;
-  box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.3); color: white*/
 }
 
 label {
@@ -269,19 +349,6 @@ label {
   margin: auto;
 }
 
-.skills-img {
-  background-image: url("https://cdn.pixabay.com/photo/2022/09/30/10/05/river-7489170_1280.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  /*  background-attachment: fixed;
-  background-position: 600px 50px; */
-  height: 400px;
-  width: 700px;
-  border-radius: 20px;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
-  border: solid white 4px;
-}
-
 .project-h2 {
   padding-bottom: 10px;
   margin-bottom: 15px;
@@ -297,3 +364,55 @@ label {
 /* Sources:  https://pixabay.com/photos/landscape-river-mountains-7236275/
 https://pixabay.com/photos/river-trees-mountains-the-needle-7489170/
 */
+
+/* IMAGES */
+
+.profile-image {
+  position: absolute;
+  left: 250px; /* 15% */
+  transform: translate(-50%, -50%) rotateX(5deg) rotateY(5deg);
+  height: 275px;
+  border-radius: 15px;
+  border: solid white 6px;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+.profile-image:hover {
+  transform: translate(-50%, -50%) rotateX(0deg) rotateY(0deg);
+}
+
+.webdev-badge {
+  position: absolute;
+  top: 250px;
+  right: 75px;
+  z-index: 998;
+  height: 300px;
+}
+
+.icon-img {
+  height: 90px;
+}
+
+.skills-img {
+  background-image: url("https://cdn.pixabay.com/photo/2022/09/30/10/05/river-7489170_1280.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*   background-attachment: fixed;
+  background-position: 600px 50px; */
+  height: 400px;
+  width: 700px;
+  border-radius: 20px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
+  border: solid white 4px;
+}
+
+.skills-img::before {
+  /* Visually hidden text style */
+  content: attr(aria-label);
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}

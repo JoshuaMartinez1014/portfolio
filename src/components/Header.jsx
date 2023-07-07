@@ -37,10 +37,7 @@ const Header = () => {
   }
 
   return (
-    <header
-      className="sticky-header"
-      style={{ boxShadow: "4px 4px 4px rgba(0, 0, 0, .2)" }}
-    >
+    <header className="sticky-header">
       <Navbar bg="light" expand="lg" className="d-flex justify-content-between">
         <Container fluid>
           <Navbar.Brand href="#home">
@@ -70,66 +67,32 @@ const Header = () => {
             <Modal.Title>Contact Form... &#128221;</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <form
-              onSubmit={sendEmail}
-              style={{
-                backgroundColor: "lightgrey",
-                width: "100%",
-                display: "flex",
-                justifyContent: "center",
-                padding: "30px",
-              }}
-            >
+            <form onSubmit={sendEmail}>
               <div style={{ width: "80%" }}>
-                <span
-                /* style={{ display: "flex", justifyContent: "space-between" }} */
-                >
-                  <div>
-                    <label htmlFor="name">Name:</label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="firstName"
-                      placeholder="Enter your name"
-                      required
-                      style={{
-                        width: "100%",
-                        height: "45px",
-                        padding: "6px 12px",
-                        fontSize: "1rem",
+                <div>
+                  <label htmlFor="name">Name:</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="firstName"
+                    placeholder="Enter your name"
+                    required
+                    className="form-input"
+                  />
+                </div>
+                <br />
+                <div>
+                  <label htmlFor="email">Email:</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Enter your email"
+                    required
+                    className="form-input"
+                  />
+                </div>
 
-                        color: "#555",
-                        backgroundColor: "#fff",
-                        backgroundImage: "none",
-                        border: "1px solid #ccc",
-                        boxShadow: "4px 4px 4px rgba(0, 0, 0, .2)",
-                      }}
-                    />
-                  </div>
-                  <br />
-                  <div>
-                    <label htmlFor="email">Email:</label>
-                    <input
-                      type="email"
-                      name="email"
-                      id="email"
-                      placeholder="Enter your email"
-                      required
-                      style={{
-                        width: "100%",
-                        height: "45px",
-                        padding: "6px 12px",
-                        fontSize: "1rem",
-
-                        color: "#555",
-                        backgroundColor: "#fff",
-                        backgroundImage: "none",
-                        border: "1px solid #ccc",
-                        boxShadow: "4px 4px 4px rgba(0, 0, 0, .2)",
-                      }}
-                    />
-                  </div>
-                </span>
                 <br />
                 <div>
                   <label htmlFor="message">Message:</label>
@@ -139,18 +102,7 @@ const Header = () => {
                     placeholder="Your message"
                     rows="3"
                     required
-                    style={{
-                      width: "100%",
-                      height: "200px",
-                      padding: "6px 12px",
-                      fontSize: "1rem",
-                      lineHeight: "1.42857143",
-                      color: "#555",
-                      backgroundColor: "#fff",
-                      backgroundImage: "none",
-                      border: "1px solid #ccc",
-                      boxShadow: "4px 4px 4px rgba(0, 0, 0, .2)",
-                    }}
+                    className="form-input-message"
                   />
                 </div>
                 <br />

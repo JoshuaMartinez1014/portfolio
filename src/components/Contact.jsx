@@ -44,63 +44,57 @@ const Contact = () => {
           marginTop: "50px",
           justifyContent: "space-evenly",
           backgroundColor: "lightgrey",
+          height: "50px",
           /* borderTop: "darkgrey solid 4px", */
           boxShadow: "0px -3px 18px rgba(0, 0, 0, 0.4)",
-          fontWeight: "bold",
+          /* fontWeight: "bold", */
           /*    borderBottom: "solid grey 2px", */
         }}
       >
         <div
           style={{
-            height: "33.3%",
             borderRight: "solid grey 2px",
+            flex: "1",
             padding: "10px",
             display: "flex",
             justifyContent: "space-around",
-            alignItems: "center",
-            flex: "1",
           }}
         >
-          <span>
-            <h4>Email:</h4>
-            <h5>Joshaumartinez1014@gmail.com</h5>
+          <span style={{ display: "flex" }}>
+            <h5>Email:</h5>
+            <p>Joshaumartinez1014@gmail.com</p>
           </span>
-          <span style={{ fontSize: "3rem" }}>&#128231;</span>
+          <span style={{ fontSize: "1.25rem" }}>&#128231;</span>
         </div>
         <div
           style={{
-            height: "33.3%",
             borderRight: "solid grey 2px",
+            flex: "1",
             padding: "10px",
             display: "flex",
             justifyContent: "space-around",
-            alignItems: "center",
-            flex: "1",
           }}
         >
           {" "}
-          <span>
-            <h4>Phone:</h4>
-            <h5>507-402-5554</h5>
+          <span style={{ display: "flex" }}>
+            <h5>Phone:</h5>
+            <p>507-402-5554</p>
           </span>
-          <span style={{ fontSize: "3rem" }}>&#128222;</span>
+          <span style={{ fontSize: "1.25rem" }}>&#128222;</span>
         </div>
         <div
           style={{
-            height: "33.3%",
             flex: "1",
             padding: "10px",
             display: "flex",
             justifyContent: "space-around",
-            alignItems: "center",
           }}
         >
-          {" "}
-          <span>
-            <h4>Home:</h4>
-            <h5>Hutchinson, Minnesota</h5>
-          </span>{" "}
-          <span style={{ fontSize: "3rem" }}>&#127968;</span>
+          <span style={{ display: "flex" }}>
+            <h5>Home:</h5>
+            <p>Hutchinson, Minnesota</p>
+          </span>
+          <span style={{ fontSize: "1.25rem" }}>&#127968;</span>
         </div>
       </div>
     </>
