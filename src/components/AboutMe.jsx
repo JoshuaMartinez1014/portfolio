@@ -9,12 +9,12 @@ const AboutMe = () => {
     <section className="aboutme-section">
       <h2>About Me</h2> <br />
       <div className="aboutme-container">
-        <article className="aboutme-par">
+        <article className="aboutme-article">
           <img
             className="icon-img"
             src={starIcon}
             alt="icon of purple box with white star shape in the middle"
-          />{" "}
+          />
           <br />
           <br />
           <p>
@@ -28,7 +28,7 @@ const AboutMe = () => {
             efficient solutions along the way.
           </p>
         </article>
-        <article className="aboutme-par">
+        <article className="aboutme-article">
           <img
             className="icon-img"
             src={heartIcon}
@@ -37,22 +37,22 @@ const AboutMe = () => {
           <br />
           <br />
           <p>
-            Colleagues know me as a{" "}
+            Colleagues know me as a
             <strong>friendly and compassionate team player</strong> who strives
             to create an inclusive environment for all. I am passionately
             curious, driven to comprehend intricate topics, and enjoy turning
-            challenges into opportunities for growth.{" "}
+            challenges into opportunities for growth.
             <strong>Positivity</strong> is my fuel, and I believe it is
             instrumental in building effective and happy teams. Let's connect
             and create meaningful tech solutions together.
           </p>
         </article>
-        <article className="aboutme-par">
+        <article className="aboutme-article">
           <img
             className="icon-img"
             src={lightningIcon}
             alt="icon of blue box with white lightning bolt in the middle"
-          />{" "}
+          />
           <br />
           <br />
           <p>
@@ -60,7 +60,7 @@ const AboutMe = () => {
             am committed to meeting deadlines and exceeding expectations. I
             strive to <strong>understand the nuances</strong> of every
             assignment and client, ensuring the deliverables align with their
-            precise needs. Furthermore, I place great emphasis on{" "}
+            precise needs. Furthermore, I place great emphasis on
             <strong>open communication</strong>, believing it to be a
             cornerstone for efficient collaboration and streamlined project
             execution.

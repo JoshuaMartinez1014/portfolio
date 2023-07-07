@@ -37,42 +37,19 @@ const Contact = () => {
     <>
       {" "}
       {/*  */}
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          marginTop: "50px",
-          justifyContent: "space-evenly",
-          backgroundColor: "lightgrey",
-          height: "50px",
-          /* borderTop: "darkgrey solid 4px", */
-          boxShadow: "0px -3px 18px rgba(0, 0, 0, 0.4)",
-          /* fontWeight: "bold", */
-          /*    borderBottom: "solid grey 2px", */
-        }}
-      >
-        <div
-          style={{
-            borderRight: "solid grey 2px",
-            flex: "1",
-            padding: "10px",
-            display: "flex",
-            justifyContent: "space-around",
-          }}
-        >
+      <section className="contact-section">
+        <article className="contact-article" style={{}}>
           <span style={{ display: "flex" }}>
             <h5>Email:</h5>
             <p>Joshaumartinez1014@gmail.com</p>
           </span>
           <span style={{ fontSize: "1.25rem" }}>&#128231;</span>
-        </div>
-        <div
+        </article>
+        <article
+          className="contact-article"
           style={{
             borderRight: "solid grey 2px",
-            flex: "1",
-            padding: "10px",
-            display: "flex",
-            justifyContent: "space-around",
+            borderLeft: "solid grey 2px",
           }}
         >
           {" "}
@@ -81,22 +58,15 @@ const Contact = () => {
             <p>507-402-5554</p>
           </span>
           <span style={{ fontSize: "1.25rem" }}>&#128222;</span>
-        </div>
-        <div
-          style={{
-            flex: "1",
-            padding: "10px",
-            display: "flex",
-            justifyContent: "space-around",
-          }}
-        >
+        </article>
+        <article className="contact-article">
           <span style={{ display: "flex" }}>
             <h5>Home:</h5>
             <p>Hutchinson, Minnesota</p>
           </span>
           <span style={{ fontSize: "1.25rem" }}>&#127968;</span>
-        </div>
-      </div>
+        </article>
+      </section>
     </>
   );
 };
