@@ -10,22 +10,9 @@ const Skills = () => {
   return (
     /*  width: "80%", marginLeft: "135px", */
     <>
-      <section
-        className="skills-section"
-        style={{
-          marginTop: "100px",
-          marginLeft: "135px",
-          width: "80%",
-        }}
-      >
-        <article
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            width: "100%",
-          }}
-        >
-          <div style={{ width: "500px" }}>
+      <section className="skills-section">
+        <div className="skills-container">
+          <article className="skills-article">
             <h2>Skills</h2>
 
             <ul>
@@ -43,12 +30,12 @@ const Skills = () => {
               aliquam cum repellat maiores sit facere, dolor quis, incidunt
               maxime optio rerum.
             </p>
-          </div>
+          </article>
           <div
             className="skills-img"
             aria-label="Description of the background image"
           ></div>
-        </article>
+        </div>
       </section>
       {/*  */}
     </>

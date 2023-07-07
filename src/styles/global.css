@@ -180,9 +180,119 @@ form {
 
 /* SKILLS */
 
+.skills-section {
+  margin-top: 100px;
+  margin-left: 135px;
+  width: 80%;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.skills-article {
+  width: 500px;
+}
+
 /* PROJECTS */
 
-.project-container {
+.projects-section {
+  margin-top: 100px;
+  margin-left: 135px;
+  margin-bottom: 100px;
+  width: 81%;
+}
+
+.projects-top {
+  height: 500px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.projects-bottom {
+  height: 500px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-header {
+  padding: 30px;
+  color: white;
+  height: 30%;
+}
+
+.card-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card42 {
+  width: 42%;
+  border-radius: 15px;
+  transform-origin: 50% 50%;
+  /* Create a 3D perspective view */
+  /*  perspective: 800px; */
+  /* By default the card will be slightly raised */
+  transform: rotateX(-5deg) rotateY(-5deg) translateZ(10px);
+  /* Define the transition to smooth the hover effect */
+  transition: transform 0.5s;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
+}
+.card55 {
+  width: 55%;
+  background-color: white;
+  border-radius: 15px;
+  transform-origin: 50% 50%;
+  /* Create a 3D perspective view */
+  /*  perspective: 800px; */
+  /* By default the card will be slightly raised */
+  transform: rotateX(-5deg) rotateY(-5deg) translateZ(10px);
+  /* Define the transition to smooth the hover effect */
+  transition: transform 0.5s;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
+}
+
+.card42:hover {
+  /* On hover the card will be "pushed" down and flattened */
+  transform: rotateX(0deg) rotateY(0deg) translateZ(0px);
+}
+.card55:hover {
+  /* On hover the card will be "pushed" down and flattened */
+  transform: rotateX(0deg) rotateY(0deg) translateZ(0px);
+}
+
+.design {
+  background-image: url("../img/design.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 10px;
+  height: 65%;
+}
+.design1 {
+  background-image: url("../img/gradebook-screenshot.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*   background-position: center 10px; */
+  height: 65%;
+}
+.design2 {
+  background-image: url("../img/tech-blog.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*   background-position: center 10px; */
+  height: 65%;
+}
+.design3 {
+  background-image: url("../img/movie-quiz.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*   background-position: center 10px; */
+  height: 65%;
+}
+
+/* .project-container {
   overflow: hidden;
   position: relative;
   height: 220px;
@@ -198,50 +308,10 @@ form {
 
 .project-container img:hover {
   transform: scale(1.05);
-}
+} */
 
 label {
   margin-bottom: 10px;
-}
-
-.design {
-  background-image: url("../img/design.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center 10px;
-  height: 65%;
-}
-
-.card {
-  transform-origin: 50% 50%;
-  /* Create a 3D perspective view */
-  /*  perspective: 800px; */
-  /* By default the card will be slightly raised */
-  transform: rotateX(-5deg) rotateY(-5deg) translateZ(10px);
-  /* Define the transition to smooth the hover effect */
-  transition: transform 0.5s;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
-}
-
-.card:hover {
-  /* On hover the card will be "pushed" down and flattened */
-  transform: rotateX(0deg) rotateY(0deg) translateZ(0px);
-}
-
-.card1 {
-  transform-origin: 50% 50%;
-  /* Create a 3D perspective view */
-  perspective: 800px;
-  /* By default the card will be slightly raised */
-  transform: rotateX(-5deg) rotateY(5deg) translateZ(10px);
-  /* Define the transition to smooth the hover effect */
-  transition: transform 0.5s;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
-}
-
-.card1:hover {
-  /* On hover the card will be "pushed" down and flattened */
-  transform: rotateX(0deg) rotateY(0deg) translateZ(0px);
 }
 
 .button-54 {
@@ -313,35 +383,6 @@ label {
 }
 .button-55:hover {
   box-shadow: none; /* Box shadow removed */
-}
-
-.design {
-  background-image: url("../img/design.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center 10px;
-  height: 65%;
-}
-.design1 {
-  background-image: url("../img/gradebook-screenshot.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  /*   background-position: center 10px; */
-  height: 65%;
-}
-.design2 {
-  background-image: url("../img/tech-blog.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  /*   background-position: center 10px; */
-  height: 65%;
-}
-.design3 {
-  background-image: url("../img/movie-quiz.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  /*   background-position: center 10px; */
-  height: 65%;
 }
 
 .modal .modal-dialog {

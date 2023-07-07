@@ -8,39 +8,14 @@ import arrow from "../img/right-arrow.png";
 
 const Projects = () => {
   return (
-    <section
-      style={{
-        marginTop: "100px",
-        marginLeft: "135px",
-        marginBottom: "100px",
-        width: "81%",
-      }}
-    >
+    <section className="projects-section">
       <h2>Projects</h2>
       <br />
-      <div
-        style={{
-          height: "500px",
-          display: "flex",
-          justifyContent: "space-between",
-        }}
-      >
-        <div
-          className="card"
-          style={{
-            width: "42%",
-            backgroundColor: "black",
-            borderRadius: "15px",
-          }}
-        >
-          <div style={{ padding: "30px", color: "white", height: "30%" }}>
+      <div className="projects-top">
+        <div className="card42" style={{ backgroundColor: "black" }}>
+          <div className="card-header" style={{ color: "white" }}>
             <h2 className="project-h2">Adobe Portfolio</h2>
-            <span
-              style={{
-                display: "flex",
-                justifyContent: "space-between",
-              }}
-            >
+            <span className="card-info">
               <p>Created using Illustrator or PhotoShop</p>
               <br />
               <a href="#">
@@ -51,21 +26,12 @@ const Projects = () => {
           <div className="design"></div>
         </div>
         <div
-          className="card"
-          style={{
-            width: "55%",
-            backgroundColor: "white",
-            borderRadius: "15px",
-          }}
+          className="card55"
+          style={{ backgroundColor: "white", border: "solid grey 1px" }}
         >
-          <div style={{ padding: "30px", color: "black", height: "31%" }}>
+          <div className="card-header" style={{ color: "black" }}>
             <h2 className="project-h2-black">Gradebook</h2>
-            <span
-              style={{
-                display: "flex",
-                justifyContent: "space-between",
-              }}
-            >
+            <span className="card-info">
               <p>Grading and Scoring Application - made in React</p>{" "}
               <span>
                 <a href="#">
@@ -84,36 +50,23 @@ const Projects = () => {
       {/*  */}
       <br />
       <br />
-      <div
-        style={{
-          height: "500px",
-          display: "flex",
-          justifyContent: "space-between",
-        }}
-      >
+      <div className="projects-bottom">
         {" "}
         <div
-          className="card"
+          className="card55"
           style={{
-            width: "55%",
             backgroundColor: "white",
-            borderRadius: "15px",
+            border: "solid grey 1px",
           }}
         >
           <div
+            className="card-header"
             style={{
-              padding: "30px",
               color: "black",
-              height: "30%",
             }}
           >
             <h2 className="project-h2-black">TechBlog</h2>
-            <span
-              style={{
-                display: "flex",
-                justifyContent: "space-between",
-              }}
-            >
+            <span className="card-info">
               <p>Social Blog Site for Technology Information</p>{" "}
               <span>
                 <a href="#">
@@ -129,21 +82,14 @@ const Projects = () => {
           <div className="design2"></div>
         </div>
         <div
-          className="card"
+          className="card42"
           style={{
-            width: "42%",
             backgroundColor: "black",
-            borderRadius: "15px",
           }}
         >
-          <div style={{ padding: "30px", color: "white", height: "30%" }}>
+          <div className="card-header" style={{ color: "white" }}>
             <h2 className="project-h2">Movie Quiz</h2>
-            <span
-              style={{
-                display: "flex",
-                justifyContent: "space-between",
-              }}
-            >
+            <span className="card-info">
               <p>Simple & Fun Movie Quiz</p>
               <br />
               <a href="#">
