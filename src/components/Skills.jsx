@@ -33,7 +33,7 @@ const Skills = () => {
           </article>
           <div
             className="skills-img"
-            aria-label="Description of the background image"
+            aria-label="landscape with mountains, grass, and water"
           ></div>
         </div>
       </section>

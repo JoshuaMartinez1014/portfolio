@@ -52,6 +52,7 @@ label {
   top: 0;
   z-index: 999;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+  width: 100vw;
 }
 
 .form-input {
@@ -129,14 +130,16 @@ label {
   transform: translate(-50%, -50%) rotateX(0deg) rotateY(0deg);
 }
 
-.homepage-title-name {
+.homepage-title {
   margin: 10px 0px 0px 415px;
+}
+
+.homepage-title-name {
   border-bottom: solid red 4px;
   width: 500px;
 }
 
 .homepage-title-resume {
-  margin: 10px 0px 0px 415px;
   width: 25%;
   color: #00028b;
   transition: color 0.3s ease, transform 0.3s ease;
@@ -340,6 +343,36 @@ label {
   background-size: cover;
   height: 65%;
 }
+
+.design::before {
+  /* Visually hidden text style */
+  content: attr(aria-label);
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+.design1::before {
+  /* Visually hidden text style */
+  content: attr(aria-label);
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+.design2::before {
+  /* Visually hidden text style */
+  content: attr(aria-label);
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+.design3::before {
+  /* Visually hidden text style */
+  content: attr(aria-label);
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
 .project-h2 {
   padding-bottom: 10px;
   margin-bottom: 15px;
@@ -452,3 +485,135 @@ label {
 /* Sources:  https://pixabay.com/photos/landscape-river-mountains-7236275/
 https://pixabay.com/photos/river-trees-mountains-the-needle-7489170/
 */
+
+@media (max-width: 1570px) {
+  .homepage-top-container {
+    width: 113vw;
+  }
+}
+
+@media (max-width: 1390px) {
+  .profile-image {
+    left: 150px;
+  }
+
+  .homepage-title {
+    margin: 10px 0 0 300px;
+  }
+
+  .webdev-badge {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .webdev-badge {
+    display: none;
+  }
+
+  .profile-image {
+    left: 850px;
+    height: 225px;
+  }
+
+  .homepage-top-container {
+    align-items: start;
+    padding-left: 45px;
+  }
+
+  .homepage-title {
+    margin-left: 45px;
+  }
+}
+
+@media (max-width: 970px) {
+  .profile-image {
+    display: none;
+  }
+}
+
+@media (max-width: 860px) {
+  .homepage-top-h1 {
+    font-size: 2.5rem;
+  }
+
+  .homepage-top-container {
+    padding-left: 20px;
+    height: 300px;
+  }
+
+  .homepage-title {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 685px) {
+  .homepage-top-container {
+    height: 260px;
+  }
+  .homepage-top-h1 {
+    font-size: 2rem;
+  }
+
+  .homepage-top-p {
+    font-size: 0.9rem;
+  }
+
+  .homepage-details {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 540px) {
+  .homepage-top-container {
+    height: 260px;
+  }
+
+  .homepage-top-h1 {
+    font-size: 1.5rem;
+  }
+  .homepage-top-p {
+    font-size: 0.85rem;
+  }
+
+  .homepage-details {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 445px) {
+  .homepage-top-container {
+    height: 200px;
+    padding-left: 10px;
+    justify-content: center;
+    padding-top: 30px;
+  }
+
+  .homepage-top-h1 {
+    font-size: 1.4rem;
+  }
+  .homepage-top-p {
+    font-size: 0.7rem;
+    justify-content: flex-start;
+    line-height: 10px;
+  }
+
+  .homepage-details {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .homepage-top-h1 {
+    font-size: 1.15rem;
+  }
+  .homepage-top-p {
+    font-size: 0.6rem;
+    justify-content: flex-start;
+    line-height: 10px;
+  }
+
+  .homepage-details {
+    font-size: 0.75rem;
+  }
+}

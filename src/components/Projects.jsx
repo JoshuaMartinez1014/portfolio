@@ -23,7 +23,10 @@ const Projects = () => {
               </a>
             </span>
           </div>
-          <div className="design"></div>
+          <div
+            className="design"
+            aria-label="Joshua Martinez's adobe portfolio website screenshot, showing 4 design images. 1. red bird, 2. concert poster with a skull, 3. a pear energy drink, 4. retro game controller ad"
+          ></div>
         </div>
         <div
           className="card55"
@@ -44,7 +47,10 @@ const Projects = () => {
             </span>
           </div>
           {/*  <img src={gradeBook} style={{ height: "250px" }} /> */}
-          <div className="design1"></div>
+          <div
+            className="design1"
+            aria-label="gradebook website screenshot, header says gradebook, the body has a large image of students sitting together"
+          ></div>
         </div>
       </div>
       {/*  */}
@@ -79,7 +85,10 @@ const Projects = () => {
             </span>
           </div>
           {/*  <img src={gradeBook} style={{ height: "250px" }} /> */}
-          <div className="design2"></div>
+          <div
+            className="design2"
+            aria-label="tech blog website screenshot, header says The Tech Blog with 2 blog posts below, titles are 10 tips for Writing Clean Code, and the other as understanding Recursion in Javascript"
+          ></div>
         </div>
         <div
           className="card42"
@@ -97,7 +106,10 @@ const Projects = () => {
               </a>
             </span>
           </div>
-          <div className="design3"></div>
+          <div
+            className="design3"
+            aria-label="movie quiz webpage screenshot, header says movie quiz with a timer at 49 seconds, and a question box asking what pill did Neo take in the Matrix"
+          ></div>
         </div>
       </div>
     </section>

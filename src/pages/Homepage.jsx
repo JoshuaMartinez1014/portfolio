@@ -20,7 +20,7 @@ const Homepage = () => {
             <p className="homepage-top-p">Graphic Designer</p>
             <p className="homepage-top-p">Problem Solver</p>
           </div>
-          <h1>
+          <h1 className="homepage-top-h1">
             Crafting Dynamic Web Solutions
             <br /> with{" "}
             <span className="homepage-top-tagline">Precision and Passion</span>
@@ -44,12 +44,14 @@ const Homepage = () => {
           className="profile-image"
           alt="Profile image of Joshua Martinez"
         />
-        <h1 className="homepage-title-name">Joshua Martinez</h1>
-        <a href="#">
-          <div>
-            <h3 className="homepage-title-resume">Resume... &#128221;</h3>
-          </div>
-        </a>
+        <div className="homepage-title">
+          <h1 className="homepage-title-name">Joshua Martinez</h1>
+          <a href="#">
+            <div>
+              <h3 className="homepage-title-resume">Resume... &#128221;</h3>
+            </div>
+          </a>
+        </div>
         <AboutMe />
         <Education />
         <Skills />
