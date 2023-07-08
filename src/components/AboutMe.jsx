@@ -37,7 +37,7 @@ const AboutMe = () => {
           <br />
           <br />
           <p>
-            Colleagues know me as a
+            Colleagues know me as {""}
             <strong>friendly and compassionate team player</strong> who strives
             to create an inclusive environment for all. I am passionately
             curious, driven to comprehend intricate topics, and enjoy turning

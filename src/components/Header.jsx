@@ -41,7 +41,10 @@ const Header = () => {
       <Navbar bg="light" expand="lg" className="d-flex justify-content-between">
         <Container fluid>
           <Navbar.Brand href="#home">
-            Joshua Martinez <span style={{ color: "grey" }}>- Portfolio</span>
+            Joshua Martinez{" "}
+            <span className="header-portfolio" style={{ color: "grey" }}>
+              - Portfolio
+            </span>
           </Navbar.Brand>
           <div>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />

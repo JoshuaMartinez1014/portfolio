@@ -143,6 +143,7 @@ label {
   width: 25%;
   color: #00028b;
   transition: color 0.3s ease, transform 0.3s ease;
+  width: 100%;
 }
 
 .homepage-title-resume:hover {
@@ -490,6 +491,10 @@ https://pixabay.com/photos/river-trees-mountains-the-needle-7489170/
   .homepage-top-container {
     width: 113vw;
   }
+
+  .aboutme-article {
+    width: 27%;
+  }
 }
 
 @media (max-width: 1390px) {
@@ -503,6 +508,15 @@ https://pixabay.com/photos/river-trees-mountains-the-needle-7489170/
 
   .webdev-badge {
     display: none;
+  }
+
+  .aboutme-section {
+    margin-left: 40px;
+    width: 95%;
+  }
+
+  .aboutme-article {
+    width: 30%;
   }
 }
 
@@ -530,6 +544,10 @@ https://pixabay.com/photos/river-trees-mountains-the-needle-7489170/
   .profile-image {
     display: none;
   }
+
+  .aboutme-article {
+    font-size: 0.95rem;
+  }
 }
 
 @media (max-width: 860px) {
@@ -544,6 +562,22 @@ https://pixabay.com/photos/river-trees-mountains-the-needle-7489170/
 
   .homepage-title {
     margin-left: 20px;
+  }
+
+  .homepage-title-name {
+    font-size: 2.5rem;
+    width: 400px;
+  }
+
+  .aboutme-section {
+    margin-left: 20px;
+    margin-top: 50px;
+  }
+  .aboutme-container {
+    flex-direction: column;
+  }
+  .aboutme-article {
+    width: 95%;
   }
 }
 
@@ -561,6 +595,13 @@ https://pixabay.com/photos/river-trees-mountains-the-needle-7489170/
 
   .homepage-details {
     font-size: 0.9rem;
+  }
+  .homepage-title-name {
+    font-size: 2.2rem;
+    width: 360px;
+  }
+  .homepage-title-resume {
+    font-size: 1.2rem;
   }
 }
 
@@ -601,19 +642,37 @@ https://pixabay.com/photos/river-trees-mountains-the-needle-7489170/
   .homepage-details {
     font-size: 0.8rem;
   }
+
+  .homepage-title-name {
+    font-size: 1.8rem;
+    width: 275px;
+  }
 }
 
 @media (max-width: 375px) {
+  .header-portfolio {
+    display: none;
+  }
+
   .homepage-top-h1 {
     font-size: 1.15rem;
   }
   .homepage-top-p {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     justify-content: flex-start;
     line-height: 10px;
   }
 
   .homepage-details {
     font-size: 0.75rem;
+  }
+
+  .homepage-title-name {
+    font-size: 1.5rem;
+    width: 230px;
+  }
+
+  .homepage-title-resume {
+    width: 100%;
   }
 }
