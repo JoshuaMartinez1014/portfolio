@@ -208,18 +208,21 @@ label {
 
 .aboutme-article {
   min-width: 550px;
-  max-width: 900px;
-  width: 25%;
+  max-width: 650px;
+  /*   width: 25%; */
   flex-grow: 1;
-  margin-right: 50px;
+  margin-top: 20px;
+  /* margin-right: 50px; */
   margin-bottom: 15px;
+  padding: 20px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
 }
 
 /* EDUCATION */
 
 .education-section {
   margin-top: 30px;
-  /*   margin-left: 135px; */
   width: 90%;
 }
 
@@ -231,7 +234,7 @@ label {
 
 .education-article {
   flex-grow: 1;
-  max-width: 700px;
+  max-width: 625px;
   margin-right: 30px;
   margin-bottom: 50px;
 }
@@ -259,7 +262,7 @@ label {
 /* SKILLS */
 
 .skills-section {
-  margin-top: 100px;
+  margin-top: 90px;
   /* margin-left: 135px; */
   width: 90%;
 }
