@@ -14,7 +14,7 @@ const Skills = () => {
         <div className="skills-container">
           <article className="skills-article">
             <h2>Skills</h2>
-
+            <br />
             <ul>
               <li>CSS</li>
               <li>JavaScript</li>

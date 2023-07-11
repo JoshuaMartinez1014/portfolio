@@ -84,7 +84,7 @@ const Projects = () => {
               </span>
             </span>
           </div>
-          {/*  <img src={gradeBook} style={{ height: "250px" }} /> */}
+
           <div
             className="design2"
             aria-label="tech blog website screenshot, header says The Tech Blog with 2 blog posts below, titles are 10 tips for Writing Clean Code, and the other as understanding Recursion in Javascript"
@@ -100,10 +100,14 @@ const Projects = () => {
             <h2 className="project-h2">Movie Quiz</h2>
             <span className="card-info">
               <p>Simple & Fun Movie Quiz</p>
-              <br />
-              <a href="#">
-                <button className="button-54">Portfolio</button>
-              </a>
+              <span>
+                <a href="#">
+                  <button className="button-54">live site</button>
+                </a>
+                <a href="#">
+                  <button className="button-54">github</button>
+                </a>
+              </span>
             </span>
           </div>
           <div
