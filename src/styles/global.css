@@ -537,16 +537,24 @@ label {
   margin-top: 10px;
   justify-content: space-evenly;
   background-color: lightgrey;
-  height: 50px;
+  height: auto;
   box-shadow: 0px -3px 18px rgba(0, 0, 0, 0.4);
   width: 100vw;
+  flex-wrap: wrap;
 }
 
 .contact-article {
-  flex: 1;
+  flex-grow: 1;
+  max-width: 100%;
+  min-height: 60px;
+  height: auto;
   padding: 10px;
+  padding-right: 25px;
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: solid grey 2px;
+  word-wrap: break-word;
 }
 
 /* MODAL */
@@ -561,4 +569,13 @@ https://pixabay.com/photos/river-trees-mountains-the-needle-7489170/
 */
 
 @media (max-width: 1570px) {
+}
+
+@media (max-width: 540px) {
+  .contact-article {
+    flex-direction: column;
+  }
+  .contact-icon {
+    display: none;
+  }
 }

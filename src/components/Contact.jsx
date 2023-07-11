@@ -39,11 +39,13 @@ const Contact = () => {
       {/*  */}
       <section className="contact-section">
         <article className="contact-article" style={{}}>
-          <span style={{ display: "flex" }}>
-            <h5>Email:</h5>
-            <p>Joshaumartinez1014@gmail.com</p>
+          <p style={{ margin: "0", fontWeight: "bold" }}>Email:</p>
+          <p style={{ margin: "0", wordBreak: "break-all" }}>
+            Joshaumartinez1014@gmail.com
+          </p>
+          <span className="contact-icon" style={{ fontSize: "1.25rem" }}>
+            &#128231;
           </span>
-          <span style={{ fontSize: "1.25rem" }}>&#128231;</span>
         </article>
         <article
           className="contact-article"
@@ -52,19 +54,18 @@ const Contact = () => {
             borderLeft: "solid grey 2px",
           }}
         >
-          {" "}
-          <span style={{ display: "flex" }}>
-            <h5>Phone:</h5>
-            <p>507-402-5554</p>
+          <p style={{ margin: "0", fontWeight: "bold" }}>Phone:</p>
+          <p style={{ margin: "0" }}>507-402-5554</p>
+          <span className="contact-icon" style={{ fontSize: "1.25rem" }}>
+            &#128222;
           </span>
-          <span style={{ fontSize: "1.25rem" }}>&#128222;</span>
         </article>
         <article className="contact-article">
-          <span style={{ display: "flex" }}>
-            <h5>Home:</h5>
-            <p>Hutchinson, Minnesota</p>
+          <p style={{ margin: "0", fontWeight: "bold" }}>Home:</p>
+          <p style={{ margin: "0" }}>Hutchinson, Minnesota</p>
+          <span className="contact-icon" style={{ fontSize: "1.25rem" }}>
+            &#127968;
           </span>
-          <span style={{ fontSize: "1.25rem" }}>&#127968;</span>
         </article>
       </section>
     </>
