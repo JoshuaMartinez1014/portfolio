@@ -60,7 +60,7 @@ const AboutMe = () => {
             am committed to meeting deadlines and exceeding expectations. I
             strive to <strong>understand the nuances</strong> of every
             assignment and client, ensuring the deliverables align with their
-            precise needs. Furthermore, I place great emphasis on
+            precise needs. Furthermore, I place great emphasis on {""}
             <strong>open communication</strong>, believing it to be a
             cornerstone for efficient collaboration and streamlined project
             execution.

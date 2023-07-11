@@ -4,6 +4,10 @@
   --font-secondary-color: grey;
 }
 
+html {
+  font-size: 24px;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -15,13 +19,24 @@ body {
 
 h1 {
   font-weight: bold;
-  font-size: 3.2rem;
+  font-size: 2.8rem;
+  width: 80%;
 }
 
 h2,
 h3,
 h4 {
   font-weight: bold;
+}
+
+h2 {
+  border-bottom: red dashed 4px;
+  padding-bottom: 12px;
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.2rem;
 }
 
 h5 {
@@ -82,7 +97,7 @@ label {
 /* HOMEPAGE */
 
 .homepage-top-container {
-  height: 350px;
+  min-height: 425px;
   width: 100vw;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("https://cdn.pixabay.com/photo/2022/06/01/17/40/landscape-7236275_1280.jpg");
@@ -91,18 +106,21 @@ label {
   background-blend-mode: multiply;
   color: white;
   background-attachment: fixed;
-  background-position: 0px 0px;
+  background-position: 0px 40px;
   border-bottom: grey solid 8px;
   box-shadow: 4px 4px 4px rgba(0 0, 0, 0.2);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   line-height: 50px;
 }
 
+.homepage-top-article {
+  width: 1400px;
+  position: absolute;
+  top: 145px;
+  left: 545px;
+}
+
 .homepage-top-p {
-  margin-right: 50px;
+  margin-right: 90px;
   color: rgb(218, 218, 218);
 }
 
@@ -115,7 +133,7 @@ label {
 
 .profile-image {
   position: absolute;
-  left: 250px; /* 15% */
+  left: 220px; /* 250px */
   transform: translate(-50%, -50%) rotateX(5deg) rotateY(5deg);
   height: 275px;
   border-radius: 15px;
@@ -130,13 +148,22 @@ label {
   transform: translate(-50%, -50%) rotateX(0deg) rotateY(0deg);
 }
 
+.webdev-badge {
+  position: absolute;
+  top: 317px;
+  right: 200px;
+  z-index: 998;
+  height: 375px;
+}
 .homepage-title {
-  margin: 10px 0px 0px 415px;
+  margin: 30px 0px 0px 400px;
 }
 
 .homepage-title-name {
   border-bottom: solid red 4px;
-  width: 500px;
+  width: 420px;
+  font-size: 2rem;
+  padding-bottom: 10px;
 }
 
 .homepage-title-resume {
@@ -144,6 +171,7 @@ label {
   color: #00028b;
   transition: color 0.3s ease, transform 0.3s ease;
   width: 100%;
+  padding-top: 10px;
 }
 
 .homepage-title-resume:hover {
@@ -151,26 +179,27 @@ label {
   transform: scale(1.005);
 }
 
-.webdev-badge {
-  position: absolute;
-  top: 250px;
-  right: 75px;
-  z-index: 998;
-  height: 300px;
+.main-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* ABOUTME */
 
 .aboutme-section {
-  width: 80%;
+  width: 90%;
   font-size: 1rem;
-  margin-left: 135px;
+  /*   margin-left: 135px; */
   margin-top: 85px;
 }
 
 .aboutme-container {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  height: auto;
 }
 
 .icon-img {
@@ -178,25 +207,38 @@ label {
 }
 
 .aboutme-article {
-  width: 400px;
+  min-width: 550px;
+  max-width: 900px;
+  width: 25%;
+  flex-grow: 1;
+  margin-right: 50px;
+  margin-bottom: 15px;
 }
 
 /* EDUCATION */
 
 .education-section {
   margin-top: 30px;
-  margin-left: 135px;
-  width: 80%;
+  /*   margin-left: 135px; */
+  width: 90%;
 }
 
 .education-container {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.education-article {
+  flex-grow: 1;
+  max-width: 700px;
+  margin-right: 30px;
+  margin-bottom: 50px;
 }
 
 .education-img-container {
-  width: 400px;
-  height: 220px;
+  width: 100%;
+  height: 300px;
   overflow: hidden;
   border-radius: 15px;
 }
@@ -218,8 +260,8 @@ label {
 
 .skills-section {
   margin-top: 100px;
-  margin-left: 135px;
-  width: 80%;
+  /* margin-left: 135px; */
+  width: 90%;
 }
 
 .skills-container {
@@ -256,9 +298,9 @@ label {
 
 .projects-section {
   margin-top: 100px;
-  margin-left: 135px;
+  /* margin-left: 135px; */
   margin-bottom: 100px;
-  width: 81%;
+  width: 90%;
 }
 
 .projects-top {
@@ -462,11 +504,12 @@ label {
 .contact-section {
   display: flex;
   flex-direction: row;
-  margin-top: 50px;
+  margin-top: 10px;
   justify-content: space-evenly;
   background-color: lightgrey;
   height: 50px;
   box-shadow: 0px -3px 18px rgba(0, 0, 0, 0.4);
+  width: 100%;
 }
 
 .contact-article {
@@ -488,191 +531,4 @@ https://pixabay.com/photos/river-trees-mountains-the-needle-7489170/
 */
 
 @media (max-width: 1570px) {
-  .homepage-top-container {
-    width: 113vw;
-  }
-
-  .aboutme-article {
-    width: 27%;
-  }
-}
-
-@media (max-width: 1390px) {
-  .profile-image {
-    left: 150px;
-  }
-
-  .homepage-title {
-    margin: 10px 0 0 300px;
-  }
-
-  .webdev-badge {
-    display: none;
-  }
-
-  .aboutme-section {
-    margin-left: 40px;
-    width: 95%;
-  }
-
-  .aboutme-article {
-    width: 30%;
-  }
-}
-
-@media (max-width: 1200px) {
-  .webdev-badge {
-    display: none;
-  }
-
-  .profile-image {
-    left: 850px;
-    height: 225px;
-  }
-
-  .homepage-top-container {
-    align-items: start;
-    padding-left: 45px;
-  }
-
-  .homepage-title {
-    margin-left: 45px;
-  }
-}
-
-@media (max-width: 970px) {
-  .profile-image {
-    display: none;
-  }
-
-  .aboutme-article {
-    font-size: 0.95rem;
-  }
-}
-
-@media (max-width: 860px) {
-  .homepage-top-h1 {
-    font-size: 2.5rem;
-  }
-
-  .homepage-top-container {
-    padding-left: 20px;
-    height: 300px;
-  }
-
-  .homepage-title {
-    margin-left: 20px;
-  }
-
-  .homepage-title-name {
-    font-size: 2.5rem;
-    width: 400px;
-  }
-
-  .aboutme-section {
-    margin-left: 20px;
-    margin-top: 50px;
-  }
-  .aboutme-container {
-    flex-direction: column;
-  }
-  .aboutme-article {
-    width: 95%;
-  }
-}
-
-@media (max-width: 685px) {
-  .homepage-top-container {
-    height: 260px;
-  }
-  .homepage-top-h1 {
-    font-size: 2rem;
-  }
-
-  .homepage-top-p {
-    font-size: 0.9rem;
-  }
-
-  .homepage-details {
-    font-size: 0.9rem;
-  }
-  .homepage-title-name {
-    font-size: 2.2rem;
-    width: 360px;
-  }
-  .homepage-title-resume {
-    font-size: 1.2rem;
-  }
-}
-
-@media (max-width: 540px) {
-  .homepage-top-container {
-    height: 260px;
-  }
-
-  .homepage-top-h1 {
-    font-size: 1.5rem;
-  }
-  .homepage-top-p {
-    font-size: 0.85rem;
-  }
-
-  .homepage-details {
-    font-size: 0.85rem;
-  }
-}
-
-@media (max-width: 445px) {
-  .homepage-top-container {
-    height: 200px;
-    padding-left: 10px;
-    justify-content: center;
-    padding-top: 30px;
-  }
-
-  .homepage-top-h1 {
-    font-size: 1.4rem;
-  }
-  .homepage-top-p {
-    font-size: 0.7rem;
-    justify-content: flex-start;
-    line-height: 10px;
-  }
-
-  .homepage-details {
-    font-size: 0.8rem;
-  }
-
-  .homepage-title-name {
-    font-size: 1.8rem;
-    width: 275px;
-  }
-}
-
-@media (max-width: 375px) {
-  .header-portfolio {
-    display: none;
-  }
-
-  .homepage-top-h1 {
-    font-size: 1.15rem;
-  }
-  .homepage-top-p {
-    font-size: 0.7rem;
-    justify-content: flex-start;
-    line-height: 10px;
-  }
-
-  .homepage-details {
-    font-size: 0.75rem;
-  }
-
-  .homepage-title-name {
-    font-size: 1.5rem;
-    width: 230px;
-  }
-
-  .homepage-title-resume {
-    width: 100%;
-  }
 }
