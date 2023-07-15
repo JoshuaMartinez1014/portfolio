@@ -218,6 +218,7 @@ label {
   justify-content: space-between;
   flex-wrap: wrap;
   height: auto;
+  gap: 10px 40px;
 }
 
 .icon-img {
@@ -225,13 +226,10 @@ label {
 }
 
 .aboutme-article {
-  min-width: 550px;
-  max-width: 650px;
+  flex: 1 0 550px;
   /*   width: 25%; */
-  flex-grow: 1;
   margin-top: 20px;
   /* margin-right: 50px; */
-  margin-bottom: 15px;
   padding: 20px;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
@@ -568,7 +566,49 @@ label {
 https://pixabay.com/photos/river-trees-mountains-the-needle-7489170/
 */
 
-@media (max-width: 1570px) {
+@media (max-width: 2090px) {
+  .aboutme-article {
+    flex: 1 0 600px;
+  }
+}
+
+@media (max-width: 2060px) {
+  .homepage-top-article {
+    left: 400px;
+  }
+
+  .webdev-badge {
+    height: 300px;
+    top: 357px;
+  }
+}
+
+@media (max-width: 1750px) {
+  .webdev-badge {
+    height: 250px;
+    top: 380px;
+    right: 100px;
+  }
+}
+
+@media (max-width: 1600px) {
+  .webdev-badge {
+    display: none;
+  }
+}
+
+@media (max-width: 770px) {
+  .main-container {
+    align-items: start;
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 670px) {
+  .aboutme-article {
+    flex: 1 0 400px;
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 540px) {
@@ -577,5 +617,11 @@ https://pixabay.com/photos/river-trees-mountains-the-needle-7489170/
   }
   .contact-icon {
     display: none;
+  }
+}
+
+@media (max-width: 440px) {
+  .aboutme-article {
+    flex: 1 0 300px;
   }
 }

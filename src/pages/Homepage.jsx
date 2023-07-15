@@ -53,15 +53,7 @@ const Homepage = () => {
             </div>
           </a>
         </div>
-        <div
-          className="main-container"
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center",
-          }}
-        >
+        <div className="main-container">
           <AboutMe />
           <Education />
           <Skills />
