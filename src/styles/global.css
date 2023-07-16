@@ -5,7 +5,7 @@
 }
 
 html {
-  font-size: 24px;
+  font-size: 19px;
   width: 100vw;
 }
 
@@ -102,7 +102,7 @@ label {
 /* HOMEPAGE */
 
 .homepage-top-container {
-  min-height: 425px;
+  min-height: 330px;
   width: 100vw;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("https://cdn.pixabay.com/photo/2022/06/01/17/40/landscape-7236275_1280.jpg");
@@ -120,8 +120,8 @@ label {
 .homepage-top-article {
   width: 1400px;
   position: absolute;
-  top: 145px;
-  left: 545px;
+  top: 105px;
+  left: 500px;
 }
 
 .homepage-top-p {
@@ -138,19 +138,12 @@ label {
 
 .profile-image {
   position: absolute;
-  left: 220px; /* 250px */
-  transform: translate(-50%, -50%) rotateX(5deg) rotateY(5deg);
+  left: 100px; /* 250px */
+  top: 275px;
   height: 275px;
   border-radius: 15px;
   border: solid white 6px;
-  transition: transform 0.5s;
-  transform-style: preserve-3d;
-  perspective: 1000px;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
-}
-
-.profile-image:hover {
-  transform: translate(-50%, -50%) rotateX(0deg) rotateY(0deg);
 }
 
 @keyframes pulse {
@@ -167,15 +160,15 @@ label {
 
 .webdev-badge {
   position: absolute;
-  top: 317px;
+  top: 253px;
   right: 200px;
-  z-index: 998;
-  height: 375px;
+  z-index: 500;
+  height: 275px;
   animation: pulse 6s infinite;
 }
 
 .homepage-title {
-  margin: 30px 0px 0px 400px;
+  margin: 30px 0px 0px 395px;
 }
 
 .homepage-title-name {
@@ -226,7 +219,7 @@ label {
 }
 
 .aboutme-article {
-  flex: 1 0 550px;
+  flex: 1 0 450px;
   /*   width: 25%; */
   margin-top: 20px;
   /* margin-right: 50px; */
@@ -253,15 +246,13 @@ label {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 50px;
   margin-top: 15px;
+  margin-bottom: 20px;
 }
 
 .education-article {
-  flex-grow: 1;
-  max-width: 625px;
-  min-width: 625px;
-  margin-bottom: 50px;
+  flex: 1 0 30%;
 }
 
 .education-img-container {
@@ -282,6 +273,20 @@ label {
 
 .education-img:hover {
   transform: scale(1.05);
+}
+
+@media (max-width: 1400px) {
+  /* adjust as necessary */
+  .education-article {
+    flex: 0 0 45%;
+  }
+}
+
+@media (max-width: 1150px) {
+  /* adjust as necessary */
+  .education-article {
+    flex: 0 0 90vw;
+  }
 }
 
 /* SKILLS */
@@ -566,48 +571,10 @@ label {
 https://pixabay.com/photos/river-trees-mountains-the-needle-7489170/
 */
 
-@media (max-width: 2090px) {
-  .aboutme-article {
-    flex: 1 0 600px;
-  }
-}
-
-@media (max-width: 2060px) {
-  .homepage-top-article {
-    left: 400px;
-  }
-
-  .webdev-badge {
-    height: 300px;
-    top: 357px;
-  }
-}
-
-@media (max-width: 1750px) {
-  .webdev-badge {
-    height: 250px;
-    top: 380px;
-    right: 100px;
-  }
-}
-
-@media (max-width: 1600px) {
-  .webdev-badge {
-    display: none;
-  }
-}
-
 @media (max-width: 770px) {
   .main-container {
     align-items: start;
     padding-left: 20px;
-  }
-}
-
-@media (max-width: 670px) {
-  .aboutme-article {
-    flex: 1 0 400px;
-    font-size: 20px;
   }
 }
 
@@ -620,7 +587,7 @@ https://pixabay.com/photos/river-trees-mountains-the-needle-7489170/
   }
 }
 
-@media (max-width: 440px) {
+@media (max-width: 520px) {
   .aboutme-article {
     flex: 1 0 300px;
   }
