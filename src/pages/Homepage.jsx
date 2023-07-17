@@ -58,8 +58,8 @@ const Homepage = () => {
           <Education />
           <Skills />
           <Projects />
-          <Contact />
         </div>
+        <Contact />
       </main>
     </section>
   );

@@ -28,7 +28,6 @@ h5 {
 
 h1 {
   font-size: 2.8rem;
-  width: 80%;
 }
 
 h2 {
@@ -102,7 +101,8 @@ label {
 /* HOMEPAGE */
 
 .homepage-top-container {
-  min-height: 330px;
+  /*  min-height: 330px; */
+  height: auto;
   width: 100vw;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("https://cdn.pixabay.com/photo/2022/06/01/17/40/landscape-7236275_1280.jpg");
@@ -118,16 +118,21 @@ label {
 }
 
 .homepage-top-article {
-  width: 1400px;
-  position: absolute;
+  /*    width: auto;
+  height: auto;
+ position: absolute;
   top: 105px;
-  left: 500px;
-  margin-right: 15px;
+  left: 500px; */
+  padding: 20px 20px 20px 420px;
 }
 
 .homepage-top-p {
   margin-right: 90px;
   color: rgb(218, 218, 218);
+}
+
+.homepage-top-h1 {
+  /*   width: 1000px; */
 }
 
 .homepage-top-tagline {
@@ -349,7 +354,7 @@ label {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 50px;
+  gap: 30px;
 }
 
 .project-card-small {
@@ -570,9 +575,9 @@ https://pixabay.com/photos/river-trees-mountains-the-needle-7489170/
     right: 50px;
   }
 
-  .homepage-top-article {
+  /*  .homepage-top-article {
     left: 400px;
-  }
+  } */
 }
 
 @media (max-width: 1400px) {
@@ -591,7 +596,7 @@ https://pixabay.com/photos/river-trees-mountains-the-needle-7489170/
 
 @media (max-width: 1260px) {
   .homepage-top-article {
-    left: 40px;
+    padding: 20px 20px 20px 60px;
   }
 
   .homepage-title {
@@ -627,14 +632,14 @@ https://pixabay.com/photos/river-trees-mountains-the-needle-7489170/
 }
 
 @media (max-width: 900px) {
-  .homepage-top-container {
+  /*   .homepage-top-container {
     min-height: 280px;
   }
-
-  .homepage-top-article {
+ */
+  /* .homepage-top-article {
     top: 85px;
     font-size: 18px;
-  }
+  } */
 
   .homepage-top-h1 {
     font-size: 2.2rem;
@@ -648,26 +653,34 @@ https://pixabay.com/photos/river-trees-mountains-the-needle-7489170/
   }
 
   .homepage-top-article {
-    left: 20px;
+    padding: 30px 20px 5px 20px;
   }
+
+  /* .homepage-top-article {
+    left: 20px;
+  } */
 
   .homepage-title {
     margin: 10px 0px 0px 0px;
   }
+
+  .homepage-top-details p {
+    display: none;
+  }
 }
 
 @media (max-width: 668px) {
-  .homepage-top-container {
+  /*  .homepage-top-container {
     min-height: 245px;
-  }
+  } */
 
   h1 {
     width: auto;
   }
 
-  .homepage-top-article {
+  /* .homepage-top-article {
     width: auto;
-  }
+  } */
 
   .homepage-top-p {
     margin-right: 32px;
@@ -679,18 +692,17 @@ https://pixabay.com/photos/river-trees-mountains-the-needle-7489170/
 }
 
 @media (max-width: 562px) {
-  .homepage-top-container {
-    /*   min-height: auto; */
+  /*  .homepage-top-container {
     height: auto;
-  }
+  } */
 
   .homepage-details {
     display: none;
   }
 
-  .homepage-top-article {
+  /* .homepage-top-article {
     width: 426px;
-  }
+  } */
 }
 
 @media (max-width: 550px) {
@@ -764,16 +776,24 @@ https://pixabay.com/photos/river-trees-mountains-the-needle-7489170/
   .header-portfolio {
     display: none;
   }
+
+  .homepage-top-h1 {
+    font-size: 1.85rem;
+  }
+
+  .homepage-top-container {
+    padding: 0px 20px 20px 0px;
+  }
 }
 
 @media (max-width: 367px) {
-  .homepage-top-container {
+  /* .homepage-top-container {
     min-height: 225px;
-  }
-  .homepage-top-article {
+  } */
+  /*   .homepage-top-article {
     top: 95px;
     width: 340px;
-  }
+  } */
 
   .homepage-top-h1 {
     font-size: 1.85rem;
@@ -797,13 +817,13 @@ https://pixabay.com/photos/river-trees-mountains-the-needle-7489170/
 }
 
 @media (max-width: 321px) {
-  .homepage-top-container {
+  /*   .homepage-top-container {
     min-height: 250px;
-  }
-  .homepage-top-article {
+  } */
+  /*   .homepage-top-article {
     top: 85px;
     width: 288px;
-  }
+  } */
 
   .homepage-top-h1 {
     font-size: 1.85rem;
@@ -827,7 +847,7 @@ https://pixabay.com/photos/river-trees-mountains-the-needle-7489170/
 }
 
 @media (max-width: 287px) {
-  .homepage-top-article {
+  /* .homepage-top-article {
     top: 150px;
-  }
+  } */
 }
