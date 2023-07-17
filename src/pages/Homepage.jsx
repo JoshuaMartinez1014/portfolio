@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Container, Form, Button, Modal } from "react-bootstrap";
-
+/* fkdjsafkljsa;dlfkjsda;lfj;saldjfk */
 import Contact from "../components/Contact";
 import Skills from "../components/Skills";
 import AboutMe from "../components/AboutMe";
@@ -8,13 +8,26 @@ import Education from "../components/Education";
 import Projects from "../components/Projects";
 import profileImg from "../img/MainProfile1.png";
 import badge from "../img/badge.png";
-import { alignPropType } from "react-bootstrap/esm/types";
+
+const DisplayWindowWidth = () => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => setWindowWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+
+    // cleanup function - remove the event listener when the component is unmounted
+    return () => window.removeEventListener("resize", handleResize);
+  }, []); // empty dependency array means this effect runs once on mount and cleanup on unmount
+
+  return <p>The viewport width is {windowWidth} pixels.</p>;
+};
 
 const Homepage = () => {
   return (
     <section className="homepage">
       <header className="homepage-top-container">
-        {" "}
+        <DisplayWindowWidth />{" "}
         <div className="homepage-top-article">
           <div className="homepage-top-details d-flex justify-content-start">
             <p className="homepage-top-p">Web Developer</p>

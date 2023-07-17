@@ -641,6 +641,10 @@ https://pixabay.com/photos/river-trees-mountains-the-needle-7489170/
     font-size: 18px;
   } */
 
+  .homepage-top-p {
+    margin-right: 50px;
+  }
+
   .homepage-top-h1 {
     font-size: 2.2rem;
   }
@@ -793,7 +797,7 @@ https://pixabay.com/photos/river-trees-mountains-the-needle-7489170/
   /*   .homepage-top-article {
     top: 95px;
     width: 340px;
-  } */
+  } 
 
   .homepage-top-h1 {
     font-size: 1.85rem;
