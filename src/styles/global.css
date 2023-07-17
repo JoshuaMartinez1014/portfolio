@@ -734,6 +734,23 @@ https://pixabay.com/photos/river-trees-mountains-the-needle-7489170/
   .aboutme-article {
     flex: 1 0 300px;
   }
+
+  .homepage-title {
+    width: auto;
+  }
+
+  .homepage-title-name {
+    font-size: 1.4rem;
+    width: 250px;
+  }
+
+  .homepage-title-resume {
+    font-size: 1rem;
+  }
+
+  .aboutme-section {
+    margin-top: 20px;
+  }
 }
 
 /* @media (max-width: 505px) {
