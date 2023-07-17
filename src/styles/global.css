@@ -276,14 +276,12 @@ label {
 }
 
 @media (max-width: 1400px) {
-  /* adjust as necessary */
   .education-article {
     flex: 0 0 45%;
   }
 }
 
 @media (max-width: 1150px) {
-  /* adjust as necessary */
   .education-article {
     flex: 0 0 90vw;
   }
@@ -292,7 +290,7 @@ label {
 /* SKILLS */
 
 .skills-section {
-  margin-top: 100px;
+  margin-top: 75px;
   width: 90%;
 }
 
@@ -300,12 +298,11 @@ label {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  gap: 400px;
+  gap: 200px;
 }
 
 .skills-article {
-  width: 45%;
-  flex-grow: 1;
+  width: 700px;
 }
 
 .skills-img {
@@ -314,8 +311,7 @@ label {
   background-size: cover;
   margin-top: 35px;
   height: 600px;
-  width: 900px;
-  flex-shrink: 0;
+  width: 800px;
   border-radius: 20px;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
   border: solid white 4px;
@@ -350,15 +346,13 @@ label {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 35px;
+  gap: 50px;
 }
 
 .project-card-small {
-  max-width: 875px;
-  min-width: 620px;
-  flex-basis: 600px;
-  flex-grow: 1;
-  flex-shrink: 1;
+  max-width: 650px;
+  min-width: 500px;
+  flex: 1 1;
   height: 675px;
   border-radius: 15px;
   transform-origin: 50% 50%;
@@ -368,11 +362,9 @@ label {
 }
 
 .project-card-big {
-  max-width: 1225px;
-  min-width: 900px;
-  flex-basis: 850px;
-  flex-grow: 1;
-  flex-shrink: 0.5;
+  max-width: 1000px;
+  min-width: 500px;
+  flex: 1 1;
   height: 675px;
   background-color: white;
   border-radius: 15px;
@@ -381,6 +373,7 @@ label {
   transition: transform 0.5s;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
 }
+
 .project-card-header {
   padding: 30px;
   color: white;
@@ -402,31 +395,25 @@ label {
   transform: rotateX(0deg) rotateY(0deg) translateZ(0px);
 }
 
-.adobe-portfolio-img {
-  background-image: url("../img/design.png");
+.project-img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center 10px;
   height: 70%;
 }
+
+.adobe-portfolio-img {
+  background-image: url("../img/design.png");
+}
 .gradebook-img {
   background-image: url("../img/gradebook-screenshot.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 70%;
 }
 .techblog-img {
   background-image: url("../img/tech-blog.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 70%;
 }
 .moviequiz-img {
   background-image: url("../img/movie-quiz.png");
-  background-repeat: no-repeat;
-  background-size: cover;
   background-position: center;
-  height: 70%;
 }
 
 .adobe-portfolio-img::before {
@@ -488,6 +475,7 @@ label {
   touch-action: manipulation;
   transition: box-shadow 0.3s ease-in-out; /* Transition added */
   margin-left: 25px;
+  margin-bottom: 5px;
   height: 35px;
 }
 
@@ -502,6 +490,7 @@ label {
 }
 
 .button-55 {
+  margin-bottom: 5px;
   height: 35px;
   font-family: "Open Sans", sans-serif;
   font-size: 12px;
@@ -571,6 +560,16 @@ label {
 https://pixabay.com/photos/river-trees-mountains-the-needle-7489170/
 */
 
+@media (max-width: 1400px) {
+  .skills-img {
+    display: none;
+  }
+
+  .skills-article {
+    width: 100%;
+  }
+}
+
 @media (max-width: 770px) {
   .main-container {
     align-items: start;
@@ -590,5 +589,47 @@ https://pixabay.com/photos/river-trees-mountains-the-needle-7489170/
 @media (max-width: 520px) {
   .aboutme-article {
     flex: 1 0 300px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .project-card-small {
+    max-width: 100%;
+    /*   min-width: 320px; */
+  }
+
+  .project-card-big {
+    max-width: 100%;
+    /*   min-width: 320px; */
+  }
+}
+@media (max-width: 550px) {
+  .project-card-small {
+    min-width: 250px;
+    height: 400px;
+    /*   min-width: 320px; */
+  }
+
+  .project-card-big {
+    height: 400px;
+    min-width: 250px;
+  }
+
+  .project-card-header {
+    max-height: 35%;
+    padding: 20px 20px 20px 30px;
+
+    /*     text-align: center; */
+  }
+
+  .project-card-info {
+    justify-content: flex-start;
+  }
+
+  .project-card-info p {
+    display: none;
+  }
+  .project-img {
+    height: 60%;
   }
 }

@@ -27,7 +27,7 @@ const Projects = () => {
             </span>
           </div>
           <div
-            className="adobe-portfolio-img"
+            className="adobe-portfolio-img  project-img"
             aria-label="Joshua Martinez's adobe portfolio website screenshot, showing 4 design images. 1. red bird, 2. concert poster with a skull, 3. a pear energy drink, 4. retro game controller ad"
           ></div>
         </div>
@@ -51,7 +51,7 @@ const Projects = () => {
           </div>
 
           <div
-            className="gradebook-img"
+            className="gradebook-img project-img"
             aria-label="gradebook website screenshot, header says gradebook, the body has a large image of students sitting together"
           ></div>
         </div>
@@ -87,7 +87,7 @@ const Projects = () => {
           </div>
 
           <div
-            className="techblog-img"
+            className="techblog-img  project-img"
             aria-label="tech blog website screenshot, header says The Tech Blog with 2 blog posts below, titles are 10 tips for Writing Clean Code, and the other as understanding Recursion in Javascript"
           ></div>
         </div>
@@ -112,7 +112,7 @@ const Projects = () => {
             </span>
           </div>
           <div
-            className="moviequiz-img"
+            className="moviequiz-img  project-img"
             aria-label="movie quiz webpage screenshot, header says movie quiz with a timer at 49 seconds, and a question box asking what pill did Neo take in the Matrix"
           ></div>
         </div>

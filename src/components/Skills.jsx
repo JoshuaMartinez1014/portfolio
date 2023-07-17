@@ -24,11 +24,14 @@ const Skills = () => {
               <li>Adobe Suite</li>
               <li>Communication</li>
             </ul>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ea
-              praesentium tempora dolores quia blanditiis odit animi laudantium
-              aliquam cum repellat maiores sit facere, dolor quis, incidunt
-              maxime optio rerum.
+            <p style={{ marginTop: "50px", width: "85%" }}>
+              Expert in <strong>CSS</strong> and <strong>JavaScript</strong>, I
+              create performant interfaces. I leverage React for responsive
+              applications. My proficiency in <strong>MongoDB</strong> and{" "}
+              <strong>MySQL</strong> aids in efficient data management. Skilled
+              with the <strong>Adobe Suite</strong>, I design captivating
+              visuals. My communication skills foster effective team
+              collaboration and stakeholder engagement.
             </p>
           </article>
           <div
