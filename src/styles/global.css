@@ -169,6 +169,8 @@ label {
 
 .homepage-title {
   margin: 30px 0px 0px 395px;
+  padding: 20px;
+  width: 500px;
 }
 
 .homepage-title-name {
@@ -359,6 +361,7 @@ label {
   transform: rotateX(-5deg) rotateY(-5deg) translateZ(10px);
   transition: transform 0.5s;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
+  z-index: 990;
 }
 
 .project-card-big {
@@ -372,6 +375,7 @@ label {
   transform: rotateX(-5deg) rotateY(-5deg) translateZ(10px);
   transition: transform 0.5s;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
+  z-index: 990;
 }
 
 .project-card-header {
@@ -562,7 +566,7 @@ https://pixabay.com/photos/river-trees-mountains-the-needle-7489170/
 
 @media (max-width: 1770px) {
   .webdev-badge {
-    display: none;
+    right: 50px;
   }
 
   .homepage-top-article {
@@ -578,6 +582,10 @@ https://pixabay.com/photos/river-trees-mountains-the-needle-7489170/
   .skills-article {
     width: 100%;
   }
+
+  .webdev-badge {
+    display: none;
+  }
 }
 
 @media (max-width: 1260px) {
@@ -592,6 +600,10 @@ https://pixabay.com/photos/river-trees-mountains-the-needle-7489170/
   .profile-image {
     right: 50px;
     left: auto;
+  }
+
+  .aboutme-section {
+    margin-top: 40px;
   }
 }
 
@@ -639,15 +651,46 @@ https://pixabay.com/photos/river-trees-mountains-the-needle-7489170/
   }
 
   .homepage-title {
-    margin: 30px 0px 0px 20px;
+    margin: 10px 0px 0px 0px;
   }
 }
 
-/* @media (max-width: 700px) {
-  .homepage-top-h1 {
-    font-size: 1.8rem;
+@media (max-width: 668px) {
+  .homepage-top-container {
+    min-height: 245px;
   }
-} */
+
+  h1 {
+    width: auto;
+  }
+
+  .homepage-top-article {
+    width: auto;
+  }
+
+  .homepage-top-p {
+    margin-right: 32px;
+  }
+
+  .homepage-top-details p {
+    display: none;
+  }
+}
+
+@media (max-width: 562px) {
+  .homepage-top-container {
+    /*   min-height: auto; */
+    height: auto;
+  }
+
+  .homepage-details {
+    display: none;
+  }
+
+  .homepage-top-article {
+    width: 426px;
+  }
+}
 
 @media (max-width: 550px) {
   .project-card-small {
@@ -693,23 +736,59 @@ https://pixabay.com/photos/river-trees-mountains-the-needle-7489170/
   }
 }
 
+/* @media (max-width: 505px) {
+  .homepage-top-details p {
+    display: none;
+  }
+} */
+
 @media (max-width: 440px) {
   .header-portfolio {
     display: none;
   }
 }
 
-@media (max-width: 321px) {
+@media (max-width: 367px) {
+  .homepage-top-container {
+    min-height: 225px;
+  }
   .homepage-top-article {
     top: 95px;
+    width: 340px;
   }
 
   .homepage-top-h1 {
     font-size: 1.85rem;
   }
 
+  .homepage-details {
+    display: none;
+  }
+
+  .homepage-top-details p {
+    display: none;
+  }
+
+  .homepage-title-name {
+    font-size: 1.4rem;
+  }
+
+  .homepage-title-resume {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 321px) {
+  .homepage-top-container {
+    min-height: 250px;
+  }
   .homepage-top-article {
-    width: 301px;
+    top: 85px;
+    width: 288px;
+  }
+
+  .homepage-top-h1 {
+    font-size: 1.85rem;
   }
 
   .homepage-details {
