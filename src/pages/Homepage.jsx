@@ -16,7 +16,7 @@ const Homepage = () => {
       <header className="homepage-top-container">
         {" "}
         <div className="homepage-top-article">
-          <div className="d-flex justify-content-start">
+          <div className="homepage-top-details d-flex justify-content-start">
             <p className="homepage-top-p">Web Developer</p>
             <p className="homepage-top-p">Graphic Designer</p>
             <p className="homepage-top-p">Problem Solver</p>
