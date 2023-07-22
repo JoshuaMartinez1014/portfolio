@@ -8,7 +8,7 @@ import Education from "../components/Education";
 import Projects from "../components/Projects";
 import profileImg from "../img/MainProfile1.png";
 import badge from "../img/badge.png";
-import { alignPropType } from "react-bootstrap/esm/types";
+import Resume from "../img/Joshua_Martinez.pdf";
 
 const Homepage = () => {
   return (
@@ -47,10 +47,8 @@ const Homepage = () => {
         />
         <div className="homepage-title">
           <h1 className="homepage-title-name">Joshua Martinez</h1>
-          <a href="#">
-            <div>
-              <h3 className="homepage-title-resume">Resume... &#128221;</h3>
-            </div>
+          <a href={Resume} download="Joshua_Martinez_Resume.pdf" wad>
+            <h3 className="homepage-title-resume">Resume... &#128221;</h3>
           </a>
         </div>
         <div className="main-container">

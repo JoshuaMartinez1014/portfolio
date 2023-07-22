@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import "../styles/global.css";
 import { Navbar, Nav, Container, Form, Button, Modal } from "react-bootstrap";
-import linkedIn from "../img/linkedin.png";
-import github from "../img/github-sign.png";
+import Resume from "../img/Joshua_Martinez.pdf";
 
 const Header = () => {
   const [showModal, setShowModal] = useState(false);
@@ -50,7 +49,9 @@ const Header = () => {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav>
-                <Nav.Link href="#home">Home</Nav.Link>
+                <Nav.Link href={Resume} download="Joshua_Martinez_Resume.pdf">
+                  Resume
+                </Nav.Link>
                 <Nav.Link onClick={() => setShowModal(true)}>
                   Contact Me
                 </Nav.Link>

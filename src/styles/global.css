@@ -72,6 +72,7 @@ label {
   z-index: 1000;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
   width: 100vw;
+  /*  backface-visibility: hidden; */
 }
 
 .form-input {
@@ -118,11 +119,6 @@ label {
 }
 
 .homepage-top-article {
-  /*    width: auto;
-  height: auto;
- position: absolute;
-  top: 105px;
-  left: 500px; */
   padding: 20px 20px 20px 420px;
 }
 
@@ -132,7 +128,6 @@ label {
 }
 
 .homepage-top-h1 {
-  /*   width: 1000px; */
 }
 
 .homepage-top-tagline {
@@ -228,9 +223,7 @@ label {
 
 .aboutme-article {
   flex: 1 0 450px;
-  /*   width: 25%; */
   margin-top: 20px;
-  /* margin-right: 50px; */
   padding: 20px;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
@@ -326,7 +319,6 @@ label {
 }
 
 .skills-img::before {
-  /* Visually hidden text style */
   content: attr(aria-label);
   position: absolute;
   top: -9999px;
@@ -340,15 +332,6 @@ label {
   margin-bottom: 100px;
   width: 90%;
 }
-
-/* .projects-container {
-  margin-top: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 50px 90px; 
-} */
 
 .project-container-row {
   display: flex;
@@ -483,7 +466,7 @@ label {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  transition: box-shadow 0.3s ease-in-out; /* Transition added */
+  transition: box-shadow 0.3s ease-in-out;
   margin-left: 25px;
   margin-bottom: 5px;
   height: 35px;
@@ -496,7 +479,7 @@ label {
 }
 
 .button-54:hover {
-  box-shadow: none; /* Box shadow removed */
+  box-shadow: none;
 }
 
 .button-55 {
@@ -574,10 +557,6 @@ https://pixabay.com/photos/river-trees-mountains-the-needle-7489170/
   .webdev-badge {
     right: 50px;
   }
-
-  /*  .homepage-top-article {
-    left: 400px;
-  } */
 }
 
 @media (max-width: 1400px) {
@@ -616,12 +595,10 @@ https://pixabay.com/photos/river-trees-mountains-the-needle-7489170/
 @media (max-width: 1150px) {
   .project-card-small {
     max-width: 100%;
-    /*   min-width: 320px; */
   }
 
   .project-card-big {
     max-width: 100%;
-    /*   min-width: 320px; */
   }
 }
 
@@ -632,15 +609,6 @@ https://pixabay.com/photos/river-trees-mountains-the-needle-7489170/
 }
 
 @media (max-width: 900px) {
-  /*   .homepage-top-container {
-    min-height: 280px;
-  }
- */
-  /* .homepage-top-article {
-    top: 85px;
-    font-size: 18px;
-  } */
-
   .homepage-top-p {
     margin-right: 50px;
   }
@@ -660,10 +628,6 @@ https://pixabay.com/photos/river-trees-mountains-the-needle-7489170/
     padding: 30px 20px 5px 20px;
   }
 
-  /* .homepage-top-article {
-    left: 20px;
-  } */
-
   .homepage-title {
     margin: 10px 0px 0px 0px;
   }
@@ -674,17 +638,9 @@ https://pixabay.com/photos/river-trees-mountains-the-needle-7489170/
 }
 
 @media (max-width: 668px) {
-  /*  .homepage-top-container {
-    min-height: 245px;
-  } */
-
   h1 {
     width: auto;
   }
-
-  /* .homepage-top-article {
-    width: auto;
-  } */
 
   .homepage-top-p {
     margin-right: 32px;
@@ -696,24 +652,15 @@ https://pixabay.com/photos/river-trees-mountains-the-needle-7489170/
 }
 
 @media (max-width: 562px) {
-  /*  .homepage-top-container {
-    height: auto;
-  } */
-
   .homepage-details {
     display: none;
   }
-
-  /* .homepage-top-article {
-    width: 426px;
-  } */
 }
 
 @media (max-width: 550px) {
   .project-card-small {
     min-width: 250px;
     height: 400px;
-    /*   min-width: 320px; */
   }
 
   .project-card-big {
@@ -770,12 +717,6 @@ https://pixabay.com/photos/river-trees-mountains-the-needle-7489170/
   }
 }
 
-/* @media (max-width: 505px) {
-  .homepage-top-details p {
-    display: none;
-  }
-} */
-
 @media (max-width: 440px) {
   .header-portfolio {
     display: none;
@@ -791,14 +732,6 @@ https://pixabay.com/photos/river-trees-mountains-the-needle-7489170/
 }
 
 @media (max-width: 367px) {
-  /* .homepage-top-container {
-    min-height: 225px;
-  } */
-  /*   .homepage-top-article {
-    top: 95px;
-    width: 340px;
-  } 
-
   .homepage-top-h1 {
     font-size: 1.85rem;
   }
@@ -818,40 +751,4 @@ https://pixabay.com/photos/river-trees-mountains-the-needle-7489170/
   .homepage-title-resume {
     font-size: 1rem;
   }
-}
-
-@media (max-width: 321px) {
-  /*   .homepage-top-container {
-    min-height: 250px;
-  } */
-  /*   .homepage-top-article {
-    top: 85px;
-    width: 288px;
-  } */
-
-  .homepage-top-h1 {
-    font-size: 1.85rem;
-  }
-
-  .homepage-details {
-    display: none;
-  }
-
-  .homepage-top-details p {
-    display: none;
-  }
-
-  .homepage-title-name {
-    font-size: 1.4rem;
-  }
-
-  .homepage-title-resume {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 287px) {
-  /* .homepage-top-article {
-    top: 150px;
-  } */
 }

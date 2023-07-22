@@ -1,10 +1,5 @@
 import React from "react";
 import "../styles/global.css";
-import gradeBook from "../img/gradebook-screenshot.png";
-import techBlog from "../img/tech-blog.png";
-import cardinal from "../img/cardinal.png";
-import design from "../img/design.png";
-import arrow from "../img/right-arrow.png";
 
 const Projects = () => {
   return (
@@ -21,7 +16,7 @@ const Projects = () => {
             <span className="project-card-info">
               <p>Created using Illustrator or PhotoShop</p>
               <br />
-              <a href="#">
+              <a href="https://joshaumartine3.myportfolio.com/" target="_blank">
                 <button className="button-54">Portfolio</button>
               </a>
             </span>
@@ -40,10 +35,16 @@ const Projects = () => {
             <span className="project-card-info">
               <p>Grading and Scoring Application - made in React</p>{" "}
               <span>
-                <a href="#">
+                <a
+                  href="https://test-gradebook.herokuapp.com/login"
+                  target="_blank"
+                >
                   <button className="button-55">Live Site</button>
                 </a>
-                <a href="#">
+                <a
+                  href="https://github.com/JoshuaMartinez1014/gradebook"
+                  target="_blank"
+                >
                   <button className="button-55">GitHub</button>
                 </a>
               </span>
@@ -76,10 +77,16 @@ const Projects = () => {
             <span className="project-card-info">
               <p>Social Blog Site for Technology Information</p>{" "}
               <span>
-                <a href="#">
+                <a
+                  href="https://jmart-tech-blog.herokuapp.com/"
+                  target="_blank"
+                >
                   <button className="button-55">Live Site</button>
                 </a>
-                <a href="#">
+                <a
+                  href="https://github.com/JoshuaMartinez1014/tech_blog"
+                  target="_blank"
+                >
                   <button className="button-55">GitHub</button>
                 </a>
               </span>
@@ -102,10 +109,16 @@ const Projects = () => {
             <span className="project-card-info">
               <p>Simple & Fun Movie Quiz</p>
               <span>
-                <a href="#">
+                <a
+                  href="https://joshuamartinez1014.github.io/movie-quiz/"
+                  target="_blank"
+                >
                   <button className="button-54">live site</button>
                 </a>
-                <a href="#">
+                <a
+                  href="https://github.com/JoshuaMartinez1014/movie-quiz"
+                  target="_blank"
+                >
                   <button className="button-54">github</button>
                 </a>
               </span>
