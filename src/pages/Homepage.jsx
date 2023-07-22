@@ -47,7 +47,10 @@ const Homepage = () => {
         />
         <div className="homepage-title">
           <h1 className="homepage-title-name">Joshua Martinez</h1>
-          <a href={Resume} download="Joshua_Martinez_Resume.pdf" wad>
+          <a
+            href="https://www.canva.com/design/DAFnHmwxzU0/OfxYTPOw-_om8o75WjYVDA/view?utm_content=DAFnHmwxzU0&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
+            target="_blank"
+          >
             <h3 className="homepage-title-resume">Resume... &#128221;</h3>
           </a>
         </div>

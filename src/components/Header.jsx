@@ -49,7 +49,10 @@ const Header = () => {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav>
-                <Nav.Link href={Resume} download="Joshua_Martinez_Resume.pdf">
+                <Nav.Link
+                  href="https://www.canva.com/design/DAFnHmwxzU0/OfxYTPOw-_om8o75WjYVDA/view?utm_content=DAFnHmwxzU0&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
+                  target="_blank"
+                >
                   Resume
                 </Nav.Link>
                 <Nav.Link onClick={() => setShowModal(true)}>
