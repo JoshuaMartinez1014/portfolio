@@ -18,14 +18,11 @@ const AboutMe = () => {
           <br />
           <br />
           <p>
-            As a <strong>React developer</strong>, I have honed my skills in
-            component-based architecture and state management. I am capable of
-            developing <strong>dynamic web applications</strong> and take pride
-            in my growing understanding of this powerful library. My experience
+            As a <strong>Software developer</strong>, and a freelance web dev, I have honed my skills in
+            <strong> coding architecture</strong> and <strong>frameworks</strong>. I am capable of
+            developing <strong>dynamic software applications</strong> and I continuously enhance my understanding of these technologies. My experience
             extends to <strong>data management</strong> as well, having worked
-            with both SQL and NoSQL databases. I am excited to continue my
-            journey, learning and adapting, while delivering high-quality,
-            efficient solutions along the way.
+            with both SQL and NoSQL databases.
           </p>
         </article>
         <article className="aboutme-article">
@@ -42,7 +39,7 @@ const AboutMe = () => {
             to create an inclusive environment for all. I am passionately
             curious, driven to comprehend intricate topics, and enjoy turning
             challenges into opportunities for growth.
-            <strong>Positivity</strong> is my fuel, and I believe it is
+            <strong> Positivity</strong> is my fuel, and I believe it is
             instrumental in building effective and happy teams. Let's connect
             and create meaningful tech solutions together.
           </p>
@@ -62,8 +59,8 @@ const AboutMe = () => {
             assignment and client, ensuring the deliverables align with their
             precise needs. Furthermore, I place great emphasis on {""}
             <strong>open communication</strong>, believing it to be a
-            cornerstone for efficient collaboration and streamlined project
-            execution.
+            cornerstone for <strong>efficient collaboration</strong> and <strong>streamlined project
+            execution</strong>.
           </p>
         </article>
       </div>

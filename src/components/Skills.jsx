@@ -16,22 +16,16 @@ const Skills = () => {
             <h2>Skills</h2>
             <br />
             <ul>
-              <li>CSS</li>
               <li>JavaScript</li>
+              <li>Java</li>
               <li>React</li>
               <li>MongoDb</li>
               <li>MySql</li>
               <li>Adobe Suite</li>
-              <li>Communication</li>
+              <li>Server Management</li>
             </ul>
             <p>
-              I enjoy working with <strong>CSS</strong> and{" "}
-              <strong>JavaScript</strong> to build solid interfaces. I use{" "}
-              <strong>React</strong> to make apps responsive, and I'm good with
-              handling data in <strong>MongoDB</strong> and{" "}
-              <strong>MySQL</strong>. I can also whip up visuals using the{" "}
-              <strong>Adobe Suite</strong>. Beyond tech, I value open{" "}
-              <strong>communication</strong> and enjoy working in a team.
+            I enjoy working with <strong>JavaScript</strong> and <strong>Java</strong>, but I am quickly <strong>adaptable</strong> to any coding language. With a good eye for design, I am able to handle <strong>creativity with CSS</strong>, while also having a strong understanding of <strong>accessibility</strong>. Additionally, I can quickly create visuals in <strong>Adobe Suite</strong>. I enjoy working with <strong>diverse teams</strong>, but I also have the ability to <strong>focus independently</strong> on projects.
             </p>
           </article>
           <div

@@ -15,7 +15,7 @@ const Education = () => {
           </div>
           <br />
           <h4>University of Minnesota Bootcamp</h4>
-          <p>Full Stack Web Dev - Certficate</p>
+          <p>Full Stack Web Dev - Certficate 2023</p>
         </article>
         <article className="education-article">
           <div className="education-img-container">
@@ -23,15 +23,15 @@ const Education = () => {
           </div>{" "}
           <br />
           <h4>University of Rasmussen</h4>
-          <p>Associates in AS for Graphic Design</p>
+          <p>Bachelors in Computer Science 2025</p>
         </article>
         <article className="education-article">
           <div className="education-img-container">
-            <img className="education-img" src={codeacademy} />
+            <img className="education-img" src={Rasmussen} />
           </div>{" "}
           <br />
-          <h4>Codecademy</h4>
-          <p>React - Certificate</p>
+          <h4>University of Rasmussen</h4>
+          <p>Associates in AS for Graphic Design 2023</p>
         </article>
       </div>
     </section>

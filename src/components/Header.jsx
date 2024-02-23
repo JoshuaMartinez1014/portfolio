@@ -50,7 +50,7 @@ const Header = () => {
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav>
                 <Nav.Link
-                  href="https://www.canva.com/design/DAFnHmwxzU0/OfxYTPOw-_om8o75WjYVDA/view?utm_content=DAFnHmwxzU0&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
+                  href="https://docs.google.com/document/d/1AXCdMTVJeOraIX1PcCtoYY8brL6WMxH_63uUJ3jRxIs/edit"
                   target="_blank"
                 >
                   Resume
