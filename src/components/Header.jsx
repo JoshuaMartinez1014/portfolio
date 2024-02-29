@@ -61,6 +61,12 @@ const Header = () => {
                 >
                   Github
                 </Nav.Link>
+                <Nav.Link
+                  href="www.linkedin.com/in/joshua-martinez1014"
+                  target="_blank"
+                >
+                  LinkedIn
+                </Nav.Link>
                 <Nav.Link onClick={() => setShowModal(true)}>
                   Contact Me
                 </Nav.Link>
