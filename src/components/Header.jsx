@@ -55,6 +55,12 @@ const Header = () => {
                 >
                   Resume
                 </Nav.Link>
+                <Nav.Link
+                  href="https://github.com/JoshuaMartinez1014"
+                  target="_blank"
+                >
+                  Github
+                </Nav.Link>
                 <Nav.Link onClick={() => setShowModal(true)}>
                   Contact Me
                 </Nav.Link>
